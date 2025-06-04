@@ -155,7 +155,7 @@ const swipeLayout = (swipe: CountryPathType) => {
             <div className='flex flex-col w-250 md:w-full h-full'>
                 <div className='flex relative flex-row w-full h-full '>
                     <div className='relative -skew-4 outline-6 mx-5 outline-offset-2 outline-white rounded-xl overflow-hidden grow'>
-                        <Image src={'/images/country/' + swipe.imgUrl_coutryStart }  alt="Une ville de Madagascar" fill={true} />
+                        <Image src={'/images/place/' + swipe.imgUrl_coutryStart }  alt="Une ville de Madagascar" fill={true} />
                         <div className="flex justify-center imtesm-center absolute inset-0 bg-none hover:bg-gray-800/25
                         items-center text-transparent text-3xl md:text-4xl font-bold hover:text-white ransition-all duration-500">
                             <div>
@@ -165,7 +165,7 @@ const swipeLayout = (swipe: CountryPathType) => {
                     </div>
                     <div className='flex items-center text-c4'><ArrowLeftRight /></div>
                     <div className='relative outline-6 mx-5 outline-offset-2 outline-white rounded-xl overflow-hidden grow'>
-                        <Image src={'/images/country/' + swipe.imgUrl_coutryMid } alt="Une ville de Madagascar" fill={true} />
+                        <Image src={'/images/place/' + swipe.imgUrl_coutryMid } alt="Une ville de Madagascar" fill={true} />
                         <div className="flex justify-center imtesm-center absolute inset-0 bg-none hover:bg-gray-800/25
                         items-center text-transparent text-3xl md:text-4xl font-bold hover:text-white ransition-all duration-500">
                             <div>
@@ -175,7 +175,7 @@ const swipeLayout = (swipe: CountryPathType) => {
                     </div>
                     <div className='flex items-center text-c4'><ArrowLeftRight /></div>
                     <div className='relative -skew-4 outline-6 mx-5 outline-offset-2 outline-white rounded-xl overflow-hidden grow'>
-                        <Image src={'/images/country/' + swipe.imgUrl_coutryEnd } alt="Une ville de Madagascar" fill={true} />
+                        <Image src={'/images/place/' + swipe.imgUrl_coutryEnd } alt="Une ville de Madagascar" fill={true} />
                         <div className="flex justify-center imtesm-center absolute inset-0 bg-none hover:bg-gray-800/25
                         items-center text-transparent text-3xl md:text-4xl font-bold hover:text-white ransition-all duration-500">
                             <div>

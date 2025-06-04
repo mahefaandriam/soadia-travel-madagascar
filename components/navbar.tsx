@@ -142,7 +142,7 @@ export function Navbar() {
     if (status === "loading") {
       return (
         <Button disabled variant="ghost">
-          Loading...
+          Chargement...
         </Button>
       )
     }
@@ -186,7 +186,7 @@ export function Navbar() {
 
     return (
       <div className="flex items-center gap-2">
-        <Button variant="ghost" onClick={() => router.push("/login")}>
+        <Button variant="ghost" className="border border-white text-white" onClick={() => router.push("/login")}>
           Connexion
         </Button>
         <Button onClick={() => router.push("/register")}>Inscription</Button>

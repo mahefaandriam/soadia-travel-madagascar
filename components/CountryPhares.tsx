@@ -18,7 +18,7 @@ const CountryPhares = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 h-[550px] md:h-[200px] gap-8">
                     <div className="col-span-1 overflow-hidden rounded-lg">             
                         <div className="bg-cover bg-center h-full transition-all duration-500 hover:scale-105"
-                        style={{ backgroundImage : 'url(/images/country/Antananarivo-imp.jpg)' }}>
+                        style={{ backgroundImage : 'url(/images/place/Antananarivo-imp.jpg)' }}>
                             <div className="flex items-center justify-center w-full h-full hover:bg-gray-800/25">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
                                     Antananarivo
@@ -28,7 +28,7 @@ const CountryPhares = () => {
                     </div>
                     <div className="col-span-1 overflow-hidden rounded-lg">             
                         <div className="bg-cover bg-center h-full transition-all duration-500 hover:scale-105"
-                        style={{ backgroundImage : 'url(/images/country/Mahajanga-imp.webp)' }}>
+                        style={{ backgroundImage : 'url(/images/place/Mahajanga-imp.webp)' }}>
                             <div className="flex items-center justify-center w-full h-full hover:bg-gray-800/25">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
                                     Mahajanga
@@ -38,7 +38,7 @@ const CountryPhares = () => {
                     </div>
                     <div className="col-span-1 overflow-hidden rounded-lg">             
                         <div className="bg-cover bg-center h-full transition-all duration-500 hover:scale-105"
-                        style={{ backgroundImage : 'url(/images/country/Antsirabe-imp.jpg)' }}>
+                        style={{ backgroundImage : 'url(/images/place/Antsirabe-imp.jpg)' }}>
                             <div className="flex items-center justify-center w-full h-full hover:bg-gray-800/25">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
                                     Antsirabe

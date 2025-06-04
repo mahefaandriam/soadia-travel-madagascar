@@ -30,7 +30,7 @@ const letterAnimation = {
 
 const Hero = () => {
   return (
-    <section id='hero' className="relative h-screen flex items-center bg-cover bg-center" style={{ backgroundImage: 'url("/images/country/avenue-baobab.jpg")' }}>
+    <section id='hero' className="relative h-screen flex items-center bg-cover bg-center" style={{ backgroundImage: 'url("/images/place/avenue-baobab.jpg")' }}>
       {/* Overlay */}
       <div className="absolute inset-0 bg-blue-900/40"></div>
       
@@ -82,7 +82,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: 'easeOut' }}
-              className="group border border-white inline-flex items-center gap-2 hover:bg-secondary text-white px-6 py-3 rounded font-semibold shadow  transition cursor-pointer"
+              className="group border border-white inline-flex items-center gap-2 hover:bg-secondary hover:text-blue-500 text-white px-6 py-3 rounded font-semibold shadow  transition cursor-pointer"
             >
               Réserver maintenant
               <motion.span
@@ -102,9 +102,9 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: 'easeOut' }}
-              className="group border border-white inline-flex items-center gap-2 bg-secondary text-white px-6 py-3 rounded font-semibold shadow  transition cursor-pointer"
+              className="group border border-white inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded font-semibold shadow  transition cursor-pointer"
             >
-              Ou Louer
+              Location
               <motion.span
                 className="inline-block transition-transform duration-300 group-hover:translate-x-1"
                 whileHover={{ x: 4 }}

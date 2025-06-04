@@ -62,7 +62,7 @@ const WhyChoose = () => {
               objectFit="cover"
               className="rounded-lg shadow-lg"
             />
-             <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-c5 rounded-lg hidden md:block">
+             <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-primary rounded-lg hidden md:block">
                 <img
                   src="/images/car/bustouristique.jpg"
                   alt="Hotel Detail"

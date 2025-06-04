@@ -69,28 +69,28 @@ export default function Home() {
 
               <div className="col-span-9 md:col-span-5 h-64">
                   <img
-                    src="/starexplusvip.jpg"
+                    src="/images/car/starexplusvip.jpg"
                     alt="Large Left"
                     className="w-full h-full object-cover  shadow-md"
                   />
               </div>
               <div className="col-span-4 h-64">
                   <img
-                    src="/bustouristique.jpg"
+                    src="/images/car/bustouristique.jpg"
                     alt="Large Left"
                     className="w-full h-full object-cover shadow-md"
                   />
               </div>
               <div className="col-span-4 h-64">
                   <img
-                    src="/VIP+-car.jpg"
+                    src="/images/car/VIP+-car.jpg"
                     alt="Large Left"
                     className="w-full h-full object-cover shadow-md"
                   />
               </div>
               <div className="col-span-9 md:col-span-5 h-64">
                   <img
-                    src="/tana.jpg"
+                    src="/images/people/tana.jpg"
                     alt="Large Left"
                     className="w-full h-full object-cover shadow-md"
                   />
@@ -105,7 +105,7 @@ export default function Home() {
           {/* Background Image */}
           <div className="absolute inset-0 z-0">
             <img
-              src="/baobab-night.webp"
+              src="/images/place/baobab-night.webp"
               alt="Background"
               className="w-full h-full object-cover"
             />
