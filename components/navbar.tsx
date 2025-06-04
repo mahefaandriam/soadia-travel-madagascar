@@ -272,7 +272,7 @@ function ThemeToggle({ mobile = false }: { mobile?: boolean }) {
     <Button
       variant="ghost"
       size={mobile ? "default" : "icon"}
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onClick={() => setTheme(theme === "dark" ? "light" : "light")}
       className={mobile ? "justify-start w-full" : ""}
     >
       {theme === "dark" ? (

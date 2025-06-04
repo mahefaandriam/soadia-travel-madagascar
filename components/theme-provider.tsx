@@ -18,7 +18,8 @@ const ThemeContext = createContext<ThemeContextProps>({
 // Define getSystemTheme function outside the component to avoid the initialization error
 const getSystemTheme = (): "light" | "dark" => {
   if (typeof window !== "undefined" && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    return "dark"
+    //return "dark"
+    return "light" // theme dark desctived
   }
   return "light"
 }

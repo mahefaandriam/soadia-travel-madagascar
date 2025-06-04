@@ -30,7 +30,7 @@ const letterAnimation = {
 
 const Hero = () => {
   return (
-    <section id='hero' className="h-screen flex items-center bg-cover bg-center" style={{ backgroundImage: 'url("/images/country/avenue-baobab.jpg")' }}>
+    <section id='hero' className="relative h-screen flex items-center bg-cover bg-center" style={{ backgroundImage: 'url("/images/country/avenue-baobab.jpg")' }}>
       {/* Overlay */}
       <div className="absolute inset-0 bg-blue-900/40"></div>
       

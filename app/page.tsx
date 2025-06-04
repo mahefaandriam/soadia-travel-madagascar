@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/navbar"
+import Hero from "@/components/Hero"
 import WhyChoose from "@/components/WhyChoose"
 import CountryPhares from "@/components/CountryPhares"
 import CountryPath from "@/components/CountryPath"
@@ -14,17 +15,18 @@ export default function Home() {
     <div className="min-h-screen overflow-x-hidden">
       <Navbar />
       <main className="overflow-visible">
-        {/* Hero Section */}
-        <section className="relative py-32">
-          {/* Background Image */}
+        {/* Hero Section  */}
+         <Hero />
+        {/*<section className="relative py-32">
+          {/* Background Image 
           <div className="absolute inset-0 z-0">
             <img
               src="/avenue-baobab.jpg"
               alt="Background"
               className="mask-b-from-20% mask-b-to-80% w-full h-full object-cover"
             />
-            {/* Overlay  */}
-            {/* <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-blue-900/80 dark:from-primary/90 dark:to-blue-900/90 mix-blend-multiply"></div> */}
+            {/* Overlay 
+            {/* <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-blue-900/80 dark:from-primary/90 dark:to-blue-900/90 mix-blend-multiply"></div> 
           </div> 
           <div className="container relative z-10 mx-auto px-4 text-center">
             <h1 className="text-4xl font-bold mb-6 text-blue-200 dark:text-white">Le bonheur de voyager avec Soadia Travel Madagascar</h1>
@@ -39,6 +41,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        */}
 
         {/* Content Section 1 - Why us ? */}
         <div>
@@ -196,10 +199,11 @@ export default function Home() {
 
           {/* User Comment Tags Component */}
           <UserCommentTags />
-          {/* Content Section 1 - Location */}
-        <div>
-          <LocationCar />
-        </div>
+
+          {/* Content Section Testamonials */}
+          <div>
+            <Testamonials />
+          </div>
         </section>
       </main>
 

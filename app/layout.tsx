@@ -6,9 +6,9 @@ import { ToastProvider } from "@/hooks/use-toast"
 import { SessionProvider } from "@/components/session-provider"
 
 export const metadata: Metadata = {
-  title: "Soatrans plus Madagascar",
-  description: "Created with v0",
-  generator: "v0.dev",
+  title: "Soadia Travel Madagascar",
+  description: "Created by Connect Talent Dev",
+  generator: "",
 }
 
 export default function RootLayout({
