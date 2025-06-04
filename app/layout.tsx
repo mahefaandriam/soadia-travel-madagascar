@@ -4,6 +4,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { ToastProvider } from "@/hooks/use-toast"
 import { SessionProvider } from "@/components/session-provider"
+import { Pacifico } from 'next/font/google';
 
 export const metadata: Metadata = {
   title: "Soadia Travel Madagascar",
@@ -11,13 +12,19 @@ export const metadata: Metadata = {
   generator: "",
 }
 
+const pacifico = Pacifico({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-pacifico', 
+});
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="fr" suppressHydrationWarning className={pacifico.variable}>
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <SessionProvider>

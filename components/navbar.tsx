@@ -23,13 +23,20 @@ interface NavItem {
   label: string
   href: string
 }
-
+/*
 const navItems: NavItem[] = [
   { label: "Accueil", href: "/" },
   { label: "Collections", href: "#features" },
   { label: "Notre tarification", href: "#pricing" },
   { label: "Nos destinations", href: "#destination" },
-]
+]*/
+
+const menuItems = [
+  { id: 'hero', label: 'Page d\'Accueil' },
+  { id: 'about', label: 'Pourquoi Nous?' },
+  { id: 'book', label: 'Réserver une Voyage' },
+  { id: 'location', label: 'Location Spécial' },
+];
 
 export function Navbar() {
   const { data: session, status } = useSession()
@@ -52,8 +59,8 @@ export function Navbar() {
       className={cn(
         "sticky fixed top-0 z-50 w-full transition-all duration-700",
         isScrolled
-          ? "bg-blue-50 backdrop-blur-sm shadow-sm h-14 dark:bg-gray-900 dark:shadow-gray-800/20 "
-          : "bg-blue-50/10 h-16 dark:bg-gray-900/10 ",
+          ? "bg-white backdrop-blur-sm shadow-sm h-14 dark:bg-gray-900 dark:shadow-gray-800/20 "
+          : "bg-none py-[30px] shadow-none dark:bg-gray-900/10 ",
       )}
     >
       <div className="container mx-auto px-4">
@@ -61,20 +68,23 @@ export function Navbar() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               {/*<div className="h-8 w-8 rounded-full bg-primary" />*/}
-              <span className="text-xl font-bold">Soadia Travel</span>
+              <span className={cn("text-xl font-pacifico font-bold",
+               isScrolled ? "text-primary" : "text-white"
+              )}>SoaDia Travel
+              </span>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            {navItems.map((item) => (
+            {menuItems.map((item) => (
               <Link
-                key={item.label}
-                href={item.href}
+                key={item.id}
+                href={`#${item.id}`}
                 className={cn(
                 "text-sm font-bold hover:text-primary transition-colors dark:text-gray-200 dark:hover:text-primary",
                   isScrolled 
-                  ? "text-gray-900"
+                  ? "text-primary/70"
                   : "text-blue-50"
                   )}
               >
@@ -108,10 +118,10 @@ export function Navbar() {
           )}
         >
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            {navItems.map((item) => (
+            {menuItems.map((item) => (
               <Link
-                key={item.label}
-                href={item.href}
+                key={item.id}
+                href={`#${item.id}`}
                 className="text-base font-medium text-gray-700 hover:text-primary py-2 transition-colors dark:text-gray-200 dark:hover:text-primary"
                 onClick={() => setMobileMenuOpen(false)}
               >
