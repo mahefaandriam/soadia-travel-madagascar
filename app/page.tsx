@@ -196,6 +196,10 @@ export default function Home() {
 
           {/* User Comment Tags Component */}
           <UserCommentTags />
+          {/* Content Section 1 - Location */}
+        <div>
+          <LocationCar />
+        </div>
         </section>
       </main>
 
