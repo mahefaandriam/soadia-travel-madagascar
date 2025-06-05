@@ -7,7 +7,7 @@ import { useRouter, useSearchParams } from "next/navigation"
 import Link from "next/link"
 import { signIn, useSession } from "next-auth/react"
 import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
+import Footer from "@/components/Footer"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -113,7 +113,7 @@ export default function LoginPage() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
+      <Navbar isProfilePage={true} />
       <main className="flex-1 flex items-center justify-center p-4 mt-16">
         <Card className="w-full max-w-md">
           <CardHeader className="space-y-1">

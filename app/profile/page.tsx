@@ -12,7 +12,7 @@ import { Separator } from "@/components/ui/separator"
 import { Switch } from "@/components/ui/switch"
 import { Calendar, Clock, User, Settings, LogOut, Edit, Shield } from "lucide-react"
 import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
+import Footer from "@/components/Footer"
 import { ReservationCard } from "@/components/reservation-card"
 import { EditProfileDialog } from "@/components/edit-profile-dialog"
 import { format } from "date-fns"
@@ -164,7 +164,7 @@ export default function ProfilePage() {
 
   return (
     <div className="min-h-screen">
-      <Navbar />
+      <Navbar isProfilePage={true}/>
       <main className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
           {/* User Profile Sidebar */}
