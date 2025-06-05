@@ -78,10 +78,10 @@ const CountryPath = () => {
         <section id='book' className="pt-16 overflow-hidden bg-c1 text-primary border-x">
             <div className='container space-y-6 '>
                 <div className="text-center mx-6 md:mx-80">
-                    <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-                        Réservez Votre Bus en 2 Minutes Chrono <br /> !
+                    <h2 className="text-2xl md:text-3xl font-bold text-sky-950 mb-4">
+                        Réservez Votre Bus en 2 Minutes Chrono
                     </h2>
-                    <p className="text-lg text-secondary mb-6">
+                    <p className="text-sm text-gray-500 mb-6">
                        Facile, rapide et sans prise de tête.
                     </p>
                     <p className="text-gray-500">
@@ -104,25 +104,6 @@ const CountryPath = () => {
                         ))}
                     </Swiper>
                 </div>
-                <a
-                    href="#book">
-                    <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, ease: 'easeOut' }}
-                    className="float-right group outline outline-offset-2 inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded font-semibold shadow hover:bg-blue-700 transition cursor-pointer"
-                    >
-                    Réserver maintenant
-                    <motion.span
-                        className="inline-block transition-transform duration-300 group-hover:translate-x-1"
-                        whileHover={{ x: 4 }}
-                    >
-                        &gt;
-                    </motion.span>
-                    </motion.button>
-                </a>
             </div>
         </section>
         </>
@@ -132,7 +113,7 @@ const CountryPath = () => {
 const swipeLayout = (swipe: CountryPathType) => {
     return ( 
     <div className='flex flex-col w-full h-full cursor-grab bg-c2'>
-        <div className='flex flex-col pt-2 items-center font-bold text-c5 justify-center w-full'>
+        <div className='flex flex-col pt-2 items-center text-sky-950 font-bold text-c5 justify-center w-full'>
             {swipe.path}
             {/* 
             <div className='flex space-x-8 pt-6'>
@@ -153,8 +134,8 @@ const swipeLayout = (swipe: CountryPathType) => {
         </div>
         <div className='w-full h-full p-5 overflow-x-auto'>
             <div className='flex flex-col w-250 md:w-full h-full'>
-                <div className='flex relative flex-row w-full h-full '>
-                    <div className='relative -skew-4 outline-6 mx-5 outline-offset-2 outline-white rounded-xl overflow-hidden grow'>
+                <div className='flex relative flex-row w-full h-full space-x-2 md:space-x-0'>
+                    <div className='relative -skew-4 outline-6 mx-0 md:mx-5 outline-offset-2 outline-white rounded-xl overflow-hidden grow'>
                         <Image src={'/images/place/' + swipe.imgUrl_coutryStart }  alt="Une ville de Madagascar" fill={true} />
                         <div className="flex justify-center imtesm-center absolute inset-0 bg-none hover:bg-gray-800/25
                         items-center text-transparent text-3xl md:text-4xl font-bold hover:text-white ransition-all duration-500">
@@ -163,8 +144,8 @@ const swipeLayout = (swipe: CountryPathType) => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex items-center text-c4'><ArrowLeftRight /></div>
-                    <div className='relative outline-6 mx-5 outline-offset-2 outline-white rounded-xl overflow-hidden grow'>
+                    <div className='hidden md:flex items-center text-c4'><ArrowLeftRight /></div>
+                    <div className='relative outline-6 mx-0 md:mx-5 outline-offset-2 outline-white rounded-xl overflow-hidden grow'>
                         <Image src={'/images/place/' + swipe.imgUrl_coutryMid } alt="Une ville de Madagascar" fill={true} />
                         <div className="flex justify-center imtesm-center absolute inset-0 bg-none hover:bg-gray-800/25
                         items-center text-transparent text-3xl md:text-4xl font-bold hover:text-white ransition-all duration-500">
@@ -173,8 +154,8 @@ const swipeLayout = (swipe: CountryPathType) => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex items-center text-c4'><ArrowLeftRight /></div>
-                    <div className='relative -skew-4 outline-6 mx-5 outline-offset-2 outline-white rounded-xl overflow-hidden grow'>
+                    <div className='hidden md:flex items-center text-c4'><ArrowLeftRight /></div>
+                    <div className='relative -skew-4 outline-6 mx-0 md:mx-5 outline-offset-2 outline-white rounded-xl overflow-hidden grow'>
                         <Image src={'/images/place/' + swipe.imgUrl_coutryEnd } alt="Une ville de Madagascar" fill={true} />
                         <div className="flex justify-center imtesm-center absolute inset-0 bg-none hover:bg-gray-800/25
                         items-center text-transparent text-3xl md:text-4xl font-bold hover:text-white ransition-all duration-500">
@@ -197,7 +178,7 @@ const swipeLayout = (swipe: CountryPathType) => {
                 </div>
             </div>
         </div>       
-        <div className='flex items-center font-bold text-c5 justify-center w-full'>
+        <div className='flex items-center font-bold text-gray-500 justify-center w-full'>
             <p className='italic font-light text-sm'>Départ&nbsp; {swipe.frequency} &nbsp;</p> A partir de {swipe.price} AR
         </div>
     </div>
