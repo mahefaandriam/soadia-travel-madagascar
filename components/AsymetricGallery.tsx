@@ -28,7 +28,7 @@ const AsymetricGallery = () => {
                     </div>
                     <div className="relative col-span-5 md:col-span-4 h-50 overflow-hidden">
                         <div className="h-full w-full bg-cover bg-center hover:scale-110 transition-all duration-500" 
-                        style={{ backgroundImage: 'url(/images/car/bustouristique.jpg)' }}>
+                        style={{ backgroundImage: 'url(/images/car/BusTouristique.jpg)' }}>
                             <div className="flex justify-center imtesm-center absolute inset-0 bg-none hover:bg-gray-800/25
                              items-center text-transparent text-xl md:text-4xl font-bold mb-4 hover:text-white ransition-all duration-500">
                                 BUS TOURISTIQUE
@@ -46,10 +46,10 @@ const AsymetricGallery = () => {
                     </div>
                     <div className="relative col-span-10 md:col-span-5 h-50 overflow-hidden">
                         <div className="h-full w-full bg-cover bg-center hover:scale-110 transition-all duration-500" 
-                        style={{ backgroundImage: 'url(/images/car/tana-staff.jpg)' }}>
+                        style={{ backgroundImage: 'url(/images/people/tana-staff.jpg)' }}>
                             <div className="flex justify-center imtesm-center absolute inset-0 bg-none hover:bg-gray-800/25
                              items-center text-transparent text-3xl md:text-4xl font-bold hover:text-white ransition-all duration-500">
-                                NOTRE STAFF 
+                                Réception 
                             </div>
                         </div>
                     </div>
