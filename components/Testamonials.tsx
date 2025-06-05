@@ -34,10 +34,10 @@ const Testamonials = () => {
         <section>
             <div className="relative space-y-6 col-span-2 md:col-span-1">
                 <div className="text-left ml-6 mr-6 md:mr-150">
-                    <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                    <h2 className="text-2xl md:text-3xl font-bold text-sky-950 mb-4">
                         Ce Qu&quot;ils Disent de Nous
                     </h2>
-                    <p className="text-lg text-secondary mb-6">
+                    <p className="text-sm text-gray-500 mb-6">
                         Des clients satisfaits, des trajets réussis.
                     </p>
                     <p className="text-gray-500">
@@ -75,7 +75,7 @@ const Testamonials = () => {
                                     className="rounded-full object-cover"
                                 />
                             </div>
-                            <p className="flex justify-items-start font-semibold text-primary">{review.name}</p>
+                            <p className="flex justify-items-start font-semibold text-sky-950">{review.name}</p>
                         </div>
                         <div className="flex flex-col justify-start gap-4 mb-4 border-b-1 border-c2">                    
                             <div className="text-left">
@@ -95,7 +95,7 @@ const Testamonials = () => {
                                     className="rounded-full object-cover"
                                 />
                             </div>
-                            <p className="flex justify-items-start font-semibold text-primary">{review.name}</p>
+                            <p className="flex justify-items-start font-semibold text-sky-950">{review.name}</p>
                         </div>
                         <div className="flex flex-col justify-start gap-4 mb-4 border-b-1 border-c2">                    
                             <div className="text-left">
@@ -115,7 +115,7 @@ const Testamonials = () => {
                                     className="rounded-full object-cover"
                                 />
                             </div>
-                            <p className="flex justify-items-start font-semibold text-primary">{review.name}</p>
+                            <p className="flex justify-items-start font-semibold text-sky-950">{review.name}</p>
                         </div>                   
                     </div>
                     </SwiperSlide>

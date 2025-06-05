@@ -82,26 +82,26 @@ const LocationCar = () => {
                         {locationCarsItems.map((c, indexc) => (
                             <SwiperSlide key={c.id}>
                                 <div className="container bg-c2 relative mx-auto px-6 grid md:grid-cols-2 gap-10 items-start">
-                                    <div className="text-left ">
-                                        <h2 className="text-3xl md:text-4xl font-bold mt-6  text-primary">
+                                    <div className="text-center ">
+                                        <h2 className="text-2xl md:text-3xl font-bold mt-6  text-sky-950">
                                             {c.name}
                                         </h2>
-                                        <p className="text-lg mb-6 text-gray-600">
+                                        <p className="text-sm mb-6 text-gray-600">
                                             {c.description}
                                         </p>
                                         {activeIndex === indexc && (
                                                                                        
                                             <AnimatePresence mode="wait">   
-                                                <ul className="space-y-4">
+                                                <ul className="space-y-4 justify-self-center">
                                                     {c.advantages.map((a, index)=> (                                                     
                                                                 <motion.li
                                                                     key={index}
                                                                     initial={{ opacity: 0, y: 20 }}
                                                                     animate={{ opacity: 1, y: 0 }}
                                                                     transition={{ delay: index * 0.3, duration: 0.5 }}
-                                                                    className="flex items-start gap-3 "
+                                                                    className="flex items-center gap-3 "
                                                                 >
-                                                                        <span className="text-secondary text-xl">✓</span>
+                                                                        <span className="text-sky-950 text-xl">✓</span>
                                                                         <p className="text-gray-700">{a}</p>
                                                                 
                                                                 </motion.li>   
@@ -111,7 +111,7 @@ const LocationCar = () => {
                                             </AnimatePresence>
                                         )}
                                         <p className="font-bold my-4">A partir de {c.locationDay} AR par jour</p>
-                                        <p className="font-bold text-blue-400 text-3xl">A partir de {c.locationWeek} AR par semaine</p>
+                                        <p className="font-bold text-blue-400 text-2xl">A partir de {c.locationWeek} AR par semaine</p>
                                     </div>
                         
                                     {/* Image */}
@@ -127,26 +127,7 @@ const LocationCar = () => {
                                 </div>
                             </SwiperSlide>
                         ))}
-                    </Swiper>    
-                    <a
-                    href="#book">
-                    <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, ease: 'easeOut' }}
-                    className="float-right group outline mt-2 outline-offset-2 inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded font-semibold shadow hover:bg-blue-700 transition cursor-pointer"
-                    >
-                    Réserver maintenant
-                    <motion.span
-                        className="inline-block transition-transform duration-300 group-hover:translate-x-1"
-                        whileHover={{ x: 4 }}
-                    >
-                        &gt;
-                    </motion.span>
-                    </motion.button>
-                </a>               
+                    </Swiper>         
                     <div className="mt-6 flex justify-center gap-6 ">
                         <button
                         onClick={() => swiperRef.current?.slidePrev()}

@@ -8,8 +8,7 @@ import LocationCar from "@/components/LocationCar"
 import Testamonials from "@/components/Testamonials"
 import { InfiniteImageScroll } from "@/components/infinite-image-scroll"
 import { TariffPlans } from "@/components/tariff-plans"
-import { UserCommentTags } from "@/components/user-comment-tags"
-import { Footer } from "@/components/footer"
+import Footer from "@/components/Footer"
 
 export default function Home() {
   return (
@@ -166,8 +165,8 @@ export default function Home() {
         <section id="contact" className="py-24 bg-gray-50 dark:bg-gray-800">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto mb-16 text-center">
-              <h2 className="text-5xl font-bold mb-6 dark:text-white">Tarifs</h2>
-              <p className="text-xl text-gray-600 dark:text-gray-300">
+              <h2 className="text-3xl font-bold mb-6 text-sky-950 dark:text-white">Tarifs</h2>
+              <p className="text-gray-500 dark:text-gray-300">
               Trouvez l’offre qui vous convient parmi nos différentes formules, conçues 
               pour s’adapter à vos besoins, vos priorités et votre budget.
               </p>
@@ -193,7 +192,7 @@ export default function Home() {
           <InfiniteTagsScroll />
         </section>*/}
 
-        {/* Content Section 6 - User Comment Tags */}
+        {/* Content Section 6 - User Comment Tags
         <section className="py-24 bg-gray-50 dark:bg-gray-800">
           <div className="container mx-auto px-4 mb-16">
             <div className="max-w-4xl mx-auto text-center">
@@ -204,14 +203,15 @@ export default function Home() {
             </div>
           </div>
 
-          {/* User Comment Tags Component */}
-          <UserCommentTags />
+          {/* User Comment Tags Component 
+          <UserCommentTags /> 
 
-          {/* Content Section Testamonials */}
-          <div>
-            <Testamonials />
-          </div>
-        </section>
+          
+        </section>*/}
+        {/* Content Section Testamonials */}
+        <div>
+          <Testamonials />
+        </div>
       </main>
 
       {/* Footer */}
