@@ -79,7 +79,7 @@ const CountryPath = () => {
             <div className='container space-y-6 '>
                 <div className="text-center mx-6 md:mx-80">
                     <h2 className="text-2xl md:text-3xl font-bold text-sky-950 mb-4">
-                        Réservez Votre Bus en 2 Minutes Chrono
+                        Découvrez nos itinéraires touristiques en bus à Madagascar
                     </h2>
                     <p className="text-sm text-gray-500 mb-6">
                        Facile, rapide et sans prise de tête.

@@ -33,7 +33,7 @@ import { useToast } from "@/hooks/use-toast"
 
 // Payment methods
 const paymentMethods = [
-  { id: "oragemoney", name: "OrangeMoney : 032 22 222 22", icon: "🟠" },
+  { id: "oragemoney", name: "OrangeMoney : 032 22 222 22", icon: "/images/car/Bus.svg" },
  /* { id: "paypal", name: "PayPal", icon: "🅿️" },
   { id: "btc", name: "Bitcoin", icon: "₿" },*/
 ]
@@ -287,7 +287,7 @@ export function ReservationModal({ isOpen, onClose, selectedPlan }: ReservationM
   }
 
   return (
-    <Dialog open={isOpen} onOpenChange={onClose} scrollable>
+    <Dialog open={isOpen} onOpenChange={onClose} >
       <DialogContent className="sm:max-w-[900px] overflow-y-auto max-h-[90vh]">
         <DialogHeader>
           <DialogTitle>Faire une Réservation</DialogTitle>
@@ -411,7 +411,7 @@ export function ReservationModal({ isOpen, onClose, selectedPlan }: ReservationM
                     onClick={() => setPaymentMethod(method.id)}
                   >
                     <RadioGroupItem value={method.id} id={method.id} className="sr-only" />
-                    <div className="text-xl">{method.icon}</div>
+                    <div className="text-xl"><img src="{method.icon}" alt="Payment 1" /></div>
                     <Label htmlFor={method.id} className="flex-1 cursor-pointer font-normal">
                       {method.name}
                     </Label>

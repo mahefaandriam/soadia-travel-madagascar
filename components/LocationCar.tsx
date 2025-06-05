@@ -62,7 +62,7 @@ const LocationCar = () => {
             <section id="location" className="py-16 bg-c1 text-gray-800">
                 <div className="text-center mx-6 md:mx-80 mb-6">
                     <h2 className="text-2xl md:text-3xl font-bold text-sky-950 mb-4">
-                        Votre Chauffeur Privé, à la Hauteur de Vos Exigences
+                        Location de Voiture avec ou sans Chauffeur à Madagascar
                     </h2>
                     <p className="text-sm text-gray-500 mb-6">
                       Service rapide, facile et 100 % sur mesure. Avec ou sans Chauffeur.
