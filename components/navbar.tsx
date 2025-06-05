@@ -80,7 +80,7 @@ export function Navbar() {
             {menuItems.map((item) => (
               <Link
                 key={item.id}
-                href={`#${item.id}`}
+                href={`/#${item.id}`}
                 className={cn(
                 "text-sm font-bold hover:text-primary transition-colors dark:text-gray-200 dark:hover:text-primary",
                   isScrolled 

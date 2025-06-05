@@ -21,15 +21,15 @@ const WhyChoose = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <span className="text-secondary text-sky-950">✓</span>
-                <p className="text-gray-700">Easy online booking and real-time seat availability</p>
+                <p className="text-gray-700">Réservation en ligne facile et disponibilité des sièges en temps réel</p>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-secondary text-sky-950">✓</span>
-                <p className="text-gray-700">Safe and well-maintained buses</p>
+                <p className="text-gray-700">Des autobus sûrs et bien entretenus</p>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-secondary text-sky-950">✓</span>
-                <p className="text-gray-700">Friendly customer support and instant confirmations</p>
+                <p className="text-gray-700">Support client amical et confirmations instantanées</p>
               </li>
             </ul>
             
