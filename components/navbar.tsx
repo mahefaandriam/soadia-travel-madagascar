@@ -48,6 +48,7 @@ export function Navbar({ isProfilePage = false }: { isProfilePage?: boolean }) {
   useEffect(() => {
     const handleScroll = () => {
       if (!isProfilePage) setIsScrolled(window.scrollY > 10)
+      if (isProfilePage) setIsScrolled(true)
     }
 
     window.addEventListener("scroll", handleScroll)
