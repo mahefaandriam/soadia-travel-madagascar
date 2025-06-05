@@ -37,7 +37,7 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 relative z-10 max-w-4xl text-center md:text-left">
         <motion.h1
-          className="text-4xl md:text-6xl font-bold mb-4 leading-tight text-white flex flex-wrap justify-center md:justify-start"
+          className="text-3xl md:text-4xl font-bold mb-4 leading-tight text-white flex flex-wrap justify-center md:justify-start"
           variants={container}
           initial="hidden"
           animate="visible"
@@ -57,7 +57,7 @@ const Hero = () => {
           ))}
         </motion.h1>
         <div
-          className="text-lg md:text-xl mb-8 max-w-xl text-gray-200"
+          className="text-lg font-pacifico md:text-xl mb-8 max-w-xl text-gray-200"
         >
           Réservez vos trajets en bus facilement ou louez les vôtres, découvrez de nouveaux itinéraires et profitez du voyage avec confort et sécurité.
         </div>

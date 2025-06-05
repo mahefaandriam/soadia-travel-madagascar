@@ -2,12 +2,12 @@
 const CountryPhares = () => {
     
     return (
-        <section className="pt-30 bg-c1 text-gray-800 ">
+        <section className="pt-12 bg-c1 text-gray-800 ">
             <div className="text-left ml-6 md:ml-6 mr-6 md:mr-150">
-                <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                <h2 className="text-2xl md:text-3xl font-bold text-sky-950 mb-4">
                     Les villes les plus emblématiques de Madagascar
                 </h2>
-                <p className="text-lg text-secondary mb-6">
+                <p className="text-sm text-gray-500 mb-6">
                     Découvrez la richesse culturelle et la beauté naturelle de Madagascar à travers ses villes incontournables.
                 </p>
                 <p className="text-gray-500">

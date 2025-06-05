@@ -59,8 +59,8 @@ export function Navbar() {
       className={cn(
         "sticky fixed top-0 z-50 w-full transition-all duration-700",
         isScrolled
-          ? "bg-white backdrop-blur-sm shadow-sm h-14 dark:bg-gray-900 dark:shadow-gray-800/20 "
-          : "bg-none py-[30px] shadow-none dark:bg-gray-900/10 ",
+          ? "bg-white py-[1px] backdrop-blur-sm shadow-sm h-14 dark:bg-gray-900 dark:shadow-gray-800/20 "
+          : "bg-none py-[20px] shadow-none dark:bg-gray-900/10 ",
       )}
     >
       <div className="container mx-auto px-4">
@@ -68,7 +68,7 @@ export function Navbar() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               {/*<div className="h-8 w-8 rounded-full bg-primary" />*/}
-              <span className={cn("text-xl font-pacifico font-bold",
+              <span className={cn("text-xl font-mono font-bold",
                isScrolled ? "text-primary" : "text-white"
               )}>SoaDia Travel
               </span>

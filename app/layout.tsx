@@ -15,7 +15,8 @@ export const metadata: Metadata = {
 const pacifico = Pacifico({
   subsets: ['latin'],
   weight: '400',
-  variable: '--font-pacifico', 
+  variable: '--font-pacifico',
+  display: 'swap', 
 });
 
 export default function RootLayout({

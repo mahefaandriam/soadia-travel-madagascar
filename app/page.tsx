@@ -2,6 +2,7 @@ import { Navbar } from "@/components/navbar"
 import Hero from "@/components/Hero"
 import WhyChoose from "@/components/WhyChoose"
 import CountryPhares from "@/components/CountryPhares"
+import AsymetricGallery from "@/components/AsymetricGallery"
 import CountryPath from "@/components/CountryPath"
 import LocationCar from "@/components/LocationCar"
 import Testamonials from "@/components/Testamonials"
@@ -53,7 +54,12 @@ export default function Home() {
           <CountryPhares />
         </div>
 
-        {/* Content Section 1 - Asymmetric Gallery */}
+        {/* Content Section 1 - Asymetric gallery */}
+        <div>
+          <AsymetricGallery />
+        </div>
+
+        {/* Content Section 1 - Asymmetric Gallery 
         <section id="features" className="py-24 dark:bg-gray-900">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto mb-16 text-center">
@@ -63,9 +69,10 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Asymmetric Gallery */}
-            <div className="grid col-span-10 md:grid-cols-9 gap-4 mx-4 md:mx-32">
-              {/* Top Row */}
+            {/* Asymmetric Gallery 
+
+             {/* <div className="grid col-span-10 md:grid-cols-9 gap-4 mx-4 md:mx-32">
+             Top Row 
 
               <div className="col-span-9 md:col-span-5 h-64">
                   <img
@@ -98,10 +105,10 @@ export default function Home() {
             </div>
             
           </div>
-        </section>
+        </section> */}
 
         {/* Content Section 2 - Background Image with Overlay */}
-        <section id="pricing" className="relative py-32">
+        <section id="pricing" className="relative py-32 mt-16">
           {/* Background Image */}
           <div className="absolute inset-0 z-0">
             <img
@@ -130,11 +137,11 @@ export default function Home() {
         </section>
 
         {/* Content Section 3 - Infinite Image Scroll */}
-        <section id="about" className="py-24 dark:bg-gray-900">
-          <div className="container mx-auto px-4 mb-16">
+        <section id="about" className="mt-16 dark:bg-gray-900">
+          <div className="container mx-auto px-4 mb-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-5xl font-bold mb-6 dark:text-white">Nos implémentations</h2>
-              <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
+              <h2 className="text-3xl font-bold text-sky-950 mb-4 dark:text-white">Nos implémentations</h2>
+              <p className="text-sm text-gray-500 dark:text-gray-300 mb-2">
               Trouvez facilement l’agence la plus proche de chez vous et bénéficiez de notre expertise locale, où que vous soyez.
               </p>
             </div>
