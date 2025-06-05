@@ -64,7 +64,7 @@ const WhyChoose = () => {
             />
              <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-primary rounded-lg hidden md:block">
                 <img
-                  src="/images/car/Bustouristique.jpg"
+                  src="/images/car/BusTouristique.jpg"
                   alt="Hotel Detail"
                   className="w-full h-full object-cover rounded-lg transform translate-x-4 translate-y-4 shadow-lg"
                 />
