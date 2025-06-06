@@ -20,7 +20,7 @@ const Footer  = () => {
                         />
                     </div>*/}
                     <p className="mb-6 text-gray-400">
-                    <span className="text-xl font-bold text-white">Soadia Travel MADAGASCAR </span>
+                    <span className="text-xl font-bold text-white">Soa Dia Travel MADAGASCAR </span>
                     <br /> Vous accompagnerons jusqu&apos;à votre destination.
                     </p>
                     <div className="flex space-x-4">

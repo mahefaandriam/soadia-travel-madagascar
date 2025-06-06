@@ -71,7 +71,7 @@ export function Navbar({ isProfilePage = false }: { isProfilePage?: boolean }) {
               {/*<div className="h-8 w-8 rounded-full bg-primary" />*/}
               <span className={cn("text-xl font-mono font-bold",
                isScrolled ? "text-primary" : "text-white"
-              )}>SoaDia Travel
+              )}>Soa Dia Travel
               </span>
             </Link>
           </div>

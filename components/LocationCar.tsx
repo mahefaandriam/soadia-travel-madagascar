@@ -14,43 +14,43 @@ import '@/styles/styles.css';
 const locationCarsItems = [
   {
     id: 1,
-    name: "Starex SUV",
-    description: "Starex luxe SUV 2012 classe",
+    name: "Enrager G5",
+    description: "Motorisation 1.5l Mivec",
     advantages: [
-      "Suppense",
-      "Facile à conduire",
-      "Trés rapide",
+      "7 Places",
+      "4 Vitres électronique",
+      "Abs",
       "Caméra recule"
     ],
     locationDay: "100.000",
     locationWeek: "450.000"
   },
-  {
-    id: 2,
-    name: "Starex SUV",
-    description: "Starex luxe SUV 2012 classe",
+   {
+    id: 1,
+    name: "Enrager G5",
+    description: "Motorisation 1.5l Mivec",
     advantages: [
-      "Suppense",
-      "Facile à conduire",
-      "Trés rapide",
+      "7 Places",
+      "4 Vitres électronique",
+      "Abs",
       "Caméra recule"
     ],
     locationDay: "100.000",
     locationWeek: "450.000"
   },
-  {
-    id: 3,
-    name: "Starex SUV",
-    description: "Starex luxe SUV 2012 classe",
+   {
+    id: 1,
+    name: "Enrager G5",
+    description: "Motorisation 1.5l Mivec",
     advantages: [
-      "Suppense",
-      "Facile à conduire",
-      "Trés rapide",
+      "7 Places",
+      "4 Vitres électronique",
+      "Abs",
       "Caméra recule"
     ],
     locationDay: "100.000",
     locationWeek: "450.000"
-  }
+  },
 ];
 
 const LocationCar = () => {

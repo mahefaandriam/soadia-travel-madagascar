@@ -12,7 +12,7 @@ const WhyChoose = () => {
           {/* Text Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold mb-4 text-sky-950">
-              Pourquoi choisir Soadia Travel?
+              Pourquoi choisir Soa Dia Travel?
             </h2>
             <p className="text-sm mb-6 text-gray-600">
               <b>Soadia Travel</b> vous offre une expérience de voyage <b>fiable</b>, <b>confortable</b> et <b>accessible</b> à travers Madagascar. Profitez d’un <b>service client attentif</b>, d’une <b>réservation facile</b> et d’une <b>flotte moderne</b> pour tous vos déplacements.

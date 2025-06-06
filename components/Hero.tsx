@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const headline = 'Explorer Madagascar avec  Soadia Travel';
+const headline = 'Explorer Madagascar avec  Soa Dia Travel';
 
 const container = {
   hidden: {},
