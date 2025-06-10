@@ -28,10 +28,10 @@ const CountryPhares = () => {
                     </div>
                     <div className="col-span-1 overflow-hidden rounded-lg">             
                         <div className="bg-cover bg-center h-full transition-all duration-500 hover:scale-105"
-                        style={{ backgroundImage : 'url(/images/place/Mahajanga-imp.webp)' }}>
+                        style={{ backgroundImage : 'url(/images/place/Fianarantsoa-imp.jpg)' }}>
                             <div className="flex items-center justify-center w-full h-full hover:bg-gray-800/25">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-                                    Mahajanga
+                                    Fianarantsoa
                                 </h2>
                             </div>
                         </div>
