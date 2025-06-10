@@ -10,15 +10,31 @@ export async function middleware(request: NextRequest) {
 
   // Define protected routes
   const protectedRoutes = ["/profile"]
+  const adminRoutes = ["/admin"]
 
   // Check if the current path is in the protected routes
   const isProtectedRoute = protectedRoutes.some((route) => request.nextUrl.pathname.startsWith(route))
+  const isAdminRoute = adminRoutes.some((route) => request.nextUrl.pathname.startsWith(route))
 
   // If it's a protected route and the user is not authenticated, redirect to login
   if (isProtectedRoute && !token) {
     const url = new URL("/login", request.url)
     url.searchParams.set("callbackUrl", request.nextUrl.pathname)
     return NextResponse.redirect(url)
+  }
+
+  // If it's an admin route, check for admin privileges
+  if (isAdminRoute) {
+    if (!token) {
+      const url = new URL("/login", request.url)
+      url.searchParams.set("callbackUrl", request.nextUrl.pathname)
+      return NextResponse.redirect(url)
+    }
+
+    // Check if user is admin
+    if (token.email !== "admin@soatransplus.com") {
+      return NextResponse.redirect(new URL("/", request.url))
+    }
   }
 
   // If the user is already authenticated and tries to access login/register, redirect to profile
@@ -31,5 +47,5 @@ export async function middleware(request: NextRequest) {
 
 // Configure the middleware to run on specific paths
 export const config = {
-  matcher: ["/profile/:path*", "/login", "/register"],
+  matcher: ["/profile/:path*", "/admin/:path*", "/login", "/register"],
 }
