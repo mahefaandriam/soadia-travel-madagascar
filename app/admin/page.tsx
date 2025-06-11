@@ -503,7 +503,7 @@ export default function AdminDashboard() {
                           </div>
                         </TableCell>
                         <TableCell>
-                          <div className="font-medium">${reservation.total_price.toFixed(2)}</div>
+                          <div className="font-medium">${reservation.total_price}</div>
                           <div className="text-sm text-gray-500">{reservation.payment_method}</div>
                         </TableCell>
                         <TableCell>
