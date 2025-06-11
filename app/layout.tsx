@@ -7,7 +7,7 @@ import { SessionProvider } from "@/components/session-provider"
 import { Pacifico } from 'next/font/google';
 
 export const metadata: Metadata = {
-  title: "Soadia Travel Madagascar",
+  title: "Soa Dia Travel Madagascar",
   description: "Created by Connect Talent Dev",
   generator: "",
 }

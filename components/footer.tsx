@@ -19,7 +19,7 @@ export function Footer() {
                   />
             </div>*/}
             <p className="mb-6 text-gray-400">
-             <span className="text-xl font-bold text-white">Soadia Travel MADAGASCAR </span>
+             <span className="text-xl font-bold text-white">Soa Dia Travel MADAGASCAR </span>
              <br /> Vous accompagnerons jusqu'à votre destination.
             </p>
             <div className="flex space-x-4">
@@ -114,7 +114,7 @@ export function Footer() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-sm text-gray-500 mb-4 md:mb-0">
-              © {new Date().getFullYear()} Soadia Travel MADAGASCAR. Tous droits réservés.
+              © {new Date().getFullYear()} Soa Dia Travel MADAGASCAR. Tous droits réservés.
             </div>
             {/*
             <div className="flex flex-wrap justify-center space-x-4 text-sm">

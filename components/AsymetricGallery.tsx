@@ -9,7 +9,7 @@ const AsymetricGallery = () => {
                         Notre équipe et nos services
                     </h2>
                     <p className="text-sm text-gray-500 mb-4">
-                        Capturer l&apos;instant et voyager avec Soadia, c&apos;est bien plus qu&apos;un simple déplacement. Nous vous invitons à vivre chaque trajet comme une expérience unique, où confort, sécurité et découverte se conjuguent pour rendre vos voyages inoubliables.
+                        Capturer l&apos;instant et voyager avec Soa Dia, c&apos;est bien plus qu&apos;un simple déplacement. Nous vous invitons à vivre chaque trajet comme une expérience unique, où confort, sécurité et découverte se conjuguent pour rendre vos voyages inoubliables.
                     </p>
                     <p className="text-gray-500">
                         Notre équipe passionnée met tout en œuvre pour vous offrir un service personnalisé, adapté à vos besoins et à vos envies. Faites confiance à notre expertise pour transformer chaque trajet en un moment d&apos;exception.
@@ -37,10 +37,10 @@ const AsymetricGallery = () => {
                     </div>
                     <div className="relative col-span-5 md:col-span-4 overflow-hidden">
                         <div className="h-full w-full bg-cover bg-center hover:scale-110 transition-all duration-500" 
-                        style={{ backgroundImage: 'url(/images/car/VIP+-car.jpg)' }}>
+                        style={{ backgroundImage: 'url(/images/car/bustouristique_.jpg)' }}>
                             <div className="flex justify-center imtesm-center absolute inset-0 bg-none hover:bg-gray-800/25
                              items-center text-transparent text-3xl md:text-4xl font-bold mb-4 hover:text-white ransition-all duration-500">
-                                4x4
+                                BUS TOURISTIQUE
                             </div>
                         </div>
                     </div>

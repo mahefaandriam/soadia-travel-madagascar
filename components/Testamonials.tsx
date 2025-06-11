@@ -11,19 +11,19 @@ const testaments = [
   {
     name: "Fatima O.",
     rating: 5,
-    content: "Soadia Travel made my trip stress-free and super comfortable. Highly recommend!",
+    content: "Soa Dia Travel made my trip stress-free and super comfortable. Highly recommend!",
     avatar: "/images/girl-avatar.jpg",
   },
     {
     name: "Fatima O.",
     rating: 5,
-    content: "Soadia Travel made my trip stress-free and super comfortable. Highly recommend!",
+    content: "Soa Dia Travel made my trip stress-free and super comfortable. Highly recommend!",
     avatar: "/images/girl-avatar.jpg",
   },
     {
     name: "Fatima O.",
     rating: 5,
-    content: "Soadia Travel made my trip stress-free and super comfortable. Highly recommend!",
+    content: "Soa Dia Travel made my trip stress-free and super comfortable. Highly recommend!",
     avatar: "/images/girl-avatar.jpg",
   },
 ];

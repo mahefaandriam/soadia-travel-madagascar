@@ -177,7 +177,7 @@ const swipeLayout = (swipe: CountryPathType) => {
         <div className='w-full h-full p-5 overflow-x-auto'>
             <div className='flex flex-col w-250 md:w-full h-full'>
                 <div className='flex relative flex-row w-full h-full space-x-2 md:space-x-0'>
-                    <div className='relative -skew-4 outline-6 mx-0 md:mx-5 outline-offset-2 outline-white rounded-xl overflow-hidden grow'>
+                    <div className='relative -skew-4 outline-6 mx-0 outline-offset-2 outline-white rounded-xl overflow-hidden grow'>
                         <Image src={'/images/place/' + swipe.imgUrl_coutryStart }  alt="Une ville de Madagascar" fill={true} />
                         <div className="flex justify-center imtesm-center absolute inset-0 bg-none hover:bg-gray-800/25
                         items-center text-transparent text-lg md:text-4xl font-bold hover:text-white ransition-all duration-500">

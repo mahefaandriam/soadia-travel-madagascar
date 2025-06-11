@@ -10,8 +10,8 @@ import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Users, Calendar, CheckCircle, XCircle, Search, MoreHorizontal, Eye, UserCheck, UserX } from "lucide-react"
 import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
 import { useToast } from "@/hooks/use-toast"
+import Footer from "@/components/Footer"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import {
   DropdownMenu,

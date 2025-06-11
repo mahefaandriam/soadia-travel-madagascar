@@ -15,8 +15,8 @@ const WhyChoose = () => {
               Pourquoi choisir Soa Dia Travel?
             </h2>
             <p className="text-sm mb-6 text-gray-600">
-              <b>Soadia Travel</b> vous offre une expérience de voyage <b>fiable</b>, <b>confortable</b> et <b>accessible</b> à travers Madagascar. Profitez d’un <b>service client attentif</b>, d’une <b>réservation facile</b> et d’une <b>flotte moderne</b> pour tous vos déplacements.
-              Chez <b>Soadia Travel</b>, nous rendons votre voyage aussi <b>confortable</b> et <b>fiable</b> que possible. Que vous voyagiez en ville ou à la campagne, nous avons tout ce qu’il vous faut.
+              <b>Soa Dia Travel</b> vous offre une expérience de voyage <b>fiable</b>, <b>confortable</b> et <b>accessible</b> à travers Madagascar. Profitez d’un <b>service client attentif</b>, d’une <b>réservation facile</b> et d’une <b>flotte moderne</b> pour tous vos déplacements.
+              Chez <b>Soa Dia Travel</b>, nous rendons votre voyage aussi <b>confortable</b> et <b>fiable</b> que possible. Que vous voyagiez en ville ou à la campagne, nous avons tout ce qu’il vous faut.
             </p>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">

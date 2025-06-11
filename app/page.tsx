@@ -29,9 +29,9 @@ export default function Home() {
             {/* <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-blue-900/80 dark:from-primary/90 dark:to-blue-900/90 mix-blend-multiply"></div> 
           </div> 
           <div className="container relative z-10 mx-auto px-4 text-center">
-            <h1 className="text-4xl font-bold mb-6 text-blue-200 dark:text-white">Le bonheur de voyager avec Soadia Travel Madagascar</h1>
+            <h1 className="text-4xl font-bold mb-6 text-blue-200 dark:text-white">Le bonheur de voyager avec Soa Dia Travel Madagascar</h1>
             <p className="text-xl text-gray-300 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-              Quand le confort prend tout son sens chez Soadia Travel
+              Quand le confort prend tout son sens chez Soa Dia Travel
             </p>
             <div className="flex justify-center gap-4">
               <a href="#tariff-plan"><button className="bg-primary text-white px-6 py-3 rounded-md font-medium">Réserver</button></a>
