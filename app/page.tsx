@@ -138,7 +138,7 @@ export default function Home() {
         <section id="about" className="mt-16 dark:bg-gray-900">
           <div className="container mx-auto px-4 mb-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl font-bold text-sky-950 mb-4 dark:text-white">Nos implémentations</h2>
+              <h2 className="text-3xl font-bold text-sky-950 mb-4 dark:text-white">Nos implantations</h2>
               <p className="text-sm text-gray-500 dark:text-gray-300 mb-2">
               Trouvez facilement l’agence la plus proche de chez vous et bénéficiez de notre expertise locale, où que vous soyez.
               </p>

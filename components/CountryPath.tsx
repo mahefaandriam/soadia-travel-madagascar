@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 
 import '@/styles/styles.css';
 
-import { Pagination } from 'swiper/modules';
+import { Pagination, Mousewheel, Autoplay } from 'swiper/modules';
 
 interface CountryPathType {
     path: string;
@@ -136,7 +136,11 @@ const CountryPath = () => {
                         pagination={{
                         clickable: true,
                         }}
-                        modules={[Pagination]}
+                        autoplay={{
+                          delay: 1500,
+                          disableOnInteraction: false,
+                        }}
+                        modules={[Mousewheel, Pagination]}
                         className="mySwiper rounded"
                     >
                         {coutryPaths.map((c, index) => (

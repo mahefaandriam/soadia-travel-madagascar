@@ -207,7 +207,7 @@ export function InfiniteImageScroll() {
             )}
             onClick={() => {
               if (scrollRef.current) {
-                const itemWidth = scrollRef.current.clientWidth / 3
+                const itemWidth = scrollRef.current.clientWidth 
                 scrollRef.current.scrollLeft = index * itemWidth
               }
             }}
