@@ -7,8 +7,18 @@ import AnimatedCounter from './AnimatedCounter';
 const WhyChoose = () => {
   return (
     <>
-      <section id='about' className="relative pt-5 bg-c1 text-gray-800 ">
-        <div className="container mx-auto px-6 grid md:grid-cols-2 gap-10">
+      <section id='about' className="relative pt-5 bg-c1 text-gray-800">
+         {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/images/place/baobab-sunset.webp"
+            alt="Background"
+            className="w-full h-full object-cover"
+          />
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-white/80 to-blue-500/80 dark:from-primary/90 dark:to-blue-900/90 "></div>
+        </div>
+        <div className="relative container mx-auto px-6 grid md:grid-cols-2 gap-10">
           {/* Text Content */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold mb-4 text-sky-950">

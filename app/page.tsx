@@ -111,12 +111,11 @@ export default function Home() {
           {/* Background Image */}
           <div className="absolute inset-0 z-0">
             <img
-              src="/images/place/baobab-night.webp"
+              src="/images/place/avenue-baobab.jpg"
               alt="Background"
               className="w-full h-full object-cover"
             />
             {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-blue-900/80 dark:from-primary/90 dark:to-blue-900/90 mix-blend-multiply"></div>
           </div>
 
           {/* Content */}

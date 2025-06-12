@@ -2,8 +2,13 @@
 const CountryPhares = () => {
     
     return (
-        <section className="pt-12 bg-c1 text-gray-800 ">
-            <div className="text-left ml-6 md:ml-6 mr-6 md:mr-150">
+        <section className="relative pt-12 bg-c1 text-gray-800 ">
+             {/* Background Image */}
+            <div className="absolute inset-0 z-0">
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-b from-blue-500/30 to-white/80 dark:from-primary/90 dark:to-blue-900/90 "></div>
+            </div>
+            <div className="relative text-left ml-6 md:ml-6 mr-6 md:mr-150">
                 <h2 className="text-2xl md:text-3xl font-bold text-sky-950 mb-4">
                     Les villes les plus emblématiques de Madagascar
                 </h2>
@@ -14,7 +19,7 @@ const CountryPhares = () => {
                     Partez à la découverte d’<strong>Antananarivo</strong>, la capitale perchée sur ses collines, <strong>Mahajanga</strong> et ses plages animées, ou encore <strong>Antsirabe</strong>, réputée pour ses sources thermales. Chaque ville offre une expérience unique, entre histoire, traditions et paysages à couper le souffle.
                 </p>
             </div>
-            <div className="container mx-auto mt-6 px-6">                
+            <div className="relative container mx-auto mt-6 px-6">                
                 <div className="grid grid-cols-1 md:grid-cols-3 h-[550px] md:h-[200px] gap-8">
                     <div className="col-span-1 overflow-hidden rounded-lg">             
                         <div className="bg-cover bg-center h-full transition-all duration-500 hover:scale-105"
