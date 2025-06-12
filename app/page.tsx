@@ -155,10 +155,11 @@ export default function Home() {
         </div>
 
 
-        {/* Content Section 1 - Location */}
+        {/* Content Section 1 - Location 
         <div>
           <LocationCar />
         </div>
+        */}
 
         {/* Content Section 4 - Tariff Plans */}
         <section id="contact" className="py-24 bg-gray-50 dark:bg-gray-800">
