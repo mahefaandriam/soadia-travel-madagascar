@@ -71,7 +71,7 @@ export function CarSeatSelector({
 
   return (
     <div className="space-y-6">
-      <div className="space-y-2">
+      {/*<div className="space-y-2">
         <Label className="text-base">Selectionner une voiture</Label>
         <Select value={selectedVehicle} onValueChange={onSelectVehicle}>
           <SelectTrigger>
@@ -89,7 +89,7 @@ export function CarSeatSelector({
           </SelectContent>
         </Select>
       </div>
-
+      */}
       <div className="space-y-2">
         <div className="flex items-center justify-between">
           <Label className="text-base">Selectionner votre place</Label>
@@ -102,7 +102,7 @@ export function CarSeatSelector({
           {/* Car image */}
           <div className="mb-4 flex justify-center">
             <img
-              src={currentVehicle?.image_url || "/placeholder.svg"}
+              src={currentVehicle?.image_url || "/images/car/bus.svg"}
               alt={currentVehicle?.name}
               className="h-16 object-contain rounded-md"
             />
