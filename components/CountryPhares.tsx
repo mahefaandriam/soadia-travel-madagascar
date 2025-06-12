@@ -24,7 +24,7 @@ const CountryPhares = () => {
                     <div className="col-span-1 overflow-hidden rounded-lg">             
                         <div className="bg-cover bg-center h-full transition-all duration-500 hover:scale-105"
                         style={{ backgroundImage : 'url(/images/place/Antananarivo-imp.jpg)' }}>
-                            <div className="flex items-center justify-center w-full h-full hover:bg-gray-800/25">
+                            <div className="flex items-center justify-center w-full h-full bg-gray-800/25">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
                                     Antananarivo
                                 </h2>
@@ -34,7 +34,7 @@ const CountryPhares = () => {
                     <div className="col-span-1 overflow-hidden rounded-lg">             
                         <div className="bg-cover bg-center h-full transition-all duration-500 hover:scale-105"
                         style={{ backgroundImage : 'url(/images/place/Fianarantsoa-imp.jpg)' }}>
-                            <div className="flex items-center justify-center w-full h-full hover:bg-gray-800/25">
+                            <div className="flex items-center justify-center w-full h-full bg-gray-800/25">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
                                     Fianarantsoa
                                 </h2>
@@ -44,7 +44,7 @@ const CountryPhares = () => {
                     <div className="col-span-1 overflow-hidden rounded-lg">             
                         <div className="bg-cover bg-center h-full transition-all duration-500 hover:scale-105"
                         style={{ backgroundImage : 'url(/images/place/Antsirabe-imp.jpg)' }}>
-                            <div className="flex items-center justify-center w-full h-full hover:bg-gray-800/25">
+                            <div className="flex items-center justify-center w-full h-full bg-gray-800/25">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
                                     Antsirabe
                                 </h2>
