@@ -411,7 +411,7 @@ export function ReservationModal({ isOpen, onClose, selectedPlan }: ReservationM
                     onClick={() => setPaymentMethod(method.id)}
                   >
                     <RadioGroupItem value={method.id} id={method.id} className="sr-only" />
-                    <div className="text-xl"><img src="/images/car/Bus.svg" alt="Payment 1" /></div>
+                    <div className="text-xl"><img src="/images/people/orange.webp" alt="Payment 1" /></div>
                     <Label htmlFor={method.id} className="flex-1 cursor-pointer font-normal">
                       {method.name}
                     </Label>
