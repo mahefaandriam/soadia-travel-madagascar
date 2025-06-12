@@ -187,7 +187,7 @@ export function Navbar({ isProfilePage = false }: { isProfilePage?: boolean }) {
 
     return (
       <div className="flex items-center gap-2">
-        <Button variant="ghost" className="border border-white text-white" onClick={() => router.push("/login")}>
+        <Button variant="ghost" className={cn("border hover:text-blue-500" , isScrolled ? "border-blue-500 text-blue-500" : "border-white text-white")} onClick={() => router.push("/login")}>
           Connexion
         </Button>
         <Button onClick={() => router.push("/register")}>Inscription</Button>
