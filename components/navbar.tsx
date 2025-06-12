@@ -83,7 +83,7 @@ export function Navbar({ isProfilePage = false }: { isProfilePage?: boolean }) {
                 key={item.id}
                 href={`/#${item.id}`}
                 className={cn(
-                "text-sm font-bold hover:text-primary transition-colors dark:text-gray-200 dark:hover:text-primary",
+                "text-sm font-bold hover:text-blue-300/80 transition-colors dark:text-gray-200 dark:hover:text-primary",
                   isScrolled 
                   ? "text-primary/70"
                   : "text-blue-50"
