@@ -242,14 +242,14 @@ export default function AdminDashboard() {
       <Navbar />
       <main className="container mx-auto px-4 py-12">
         <div className="mb-8">
-          <h1 className="text-3xl font-bold">Admin Dashboard</h1>
-          <p className="text-gray-600 dark:text-gray-400">Manage users, reservations, and system settings</p>
+          <h1 className="text-3xl font-bold">Tableau de bord d'administration</h1>
+          <p className="text-gray-600 dark:text-gray-400">Gérer les utilisateurs, les réservations et les paramètres du système</p>
         </div>
 
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
           <TabsList className="grid grid-cols-4 mb-8">
-            <TabsTrigger value="overview">Overview</TabsTrigger>
-            <TabsTrigger value="users">Users</TabsTrigger>
+            <TabsTrigger value="overview">Aperçu</TabsTrigger>
+            <TabsTrigger value="users">Utilisateurs</TabsTrigger>
             <TabsTrigger value="reservations">Reservations</TabsTrigger>
           {/*  <TabsTrigger value="settings">Settings</TabsTrigger> -*/}
           </TabsList>
@@ -259,34 +259,34 @@ export default function AdminDashboard() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">Total Users</CardTitle>
+                  <CardTitle className="text-sm font-medium">Nombre total d'utilisateurs</CardTitle>
                   <Users className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
                   <div className="text-2xl font-bold">{stats.totalUsers}</div>
-                  <p className="text-xs text-muted-foreground">{stats.pendingUsers} pending approval</p>
+                  <p className="text-xs text-muted-foreground">{stats.pendingUsers} En attente d'approbation</p>
                 </CardContent>
               </Card>
 
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">Total Reservations</CardTitle>
+                  <CardTitle className="text-sm font-medium">Total des réservations</CardTitle>
                   <Calendar className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
                   <div className="text-2xl font-bold">{stats.totalReservations}</div>
-                  <p className="text-xs text-muted-foreground">{stats.pendingReservations} pending confirmation</p>
+                  <p className="text-xs text-muted-foreground">{stats.pendingReservations} En attente de confirmation</p>
                 </CardContent>
               </Card>
 
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">Total Revenue</CardTitle>
+                  <CardTitle className="text-sm font-medium">Recettes totales</CardTitle>
                   <CheckCircle className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
                   <div className="text-2xl font-bold">${stats.totalRevenue}</div>
-                  <p className="text-xs text-muted-foreground">{stats.confirmedReservations} confirmed reservations</p>
+                  <p className="text-xs text-muted-foreground">{stats.confirmedReservations} Réservations confirmées</p>
                 </CardContent>
               </Card>
             </div>
@@ -294,8 +294,8 @@ export default function AdminDashboard() {
             {/* Recent Activity */}
             <Card>
               <CardHeader>
-                <CardTitle>Recent Activity</CardTitle>
-                <CardDescription>Latest user registrations and reservations</CardDescription>
+                <CardTitle>Activités récentes</CardTitle>
+                <CardDescription>Dernières inscriptions et réservations d’utilisateurs</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
@@ -341,28 +341,28 @@ export default function AdminDashboard() {
                   <SelectValue placeholder="Filter by status" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="all">All Status</SelectItem>
-                  <SelectItem value="pending">Pending</SelectItem>
-                  <SelectItem value="approved">Approved</SelectItem>
-                  <SelectItem value="rejected">Rejected</SelectItem>
+                  <SelectItem value="all">Tous les statuts</SelectItem>
+                  <SelectItem value="pending">En attente</SelectItem>
+                  <SelectItem value="approved">approuvé</SelectItem>
+                  <SelectItem value="rejected">rejeté</SelectItem>
                 </SelectContent>
               </Select>
             </div>
 
             <Card>
               <CardHeader>
-                <CardTitle>User Management</CardTitle>
-                <CardDescription>Approve or reject user accounts</CardDescription>
+                <CardTitle>Gestion des utilisateurs</CardTitle>
+                <CardDescription>Approuver ou rejeter les comptes utilisateurs</CardDescription>
               </CardHeader>
               <CardContent>
                 <Table>
                   <TableHeader>
                     <TableRow>
-                      <TableHead>User</TableHead>
+                      <TableHead>Utilisateur</TableHead>
                       <TableHead>Email</TableHead>
                       <TableHead>Phone</TableHead>
-                      <TableHead>Status</TableHead>
-                      <TableHead>Joined</TableHead>
+                      <TableHead>État</TableHead>
+                      <TableHead>A rejoint</TableHead>
                       <TableHead>Actions</TableHead>
                     </TableRow>
                   </TableHeader>
@@ -404,18 +404,18 @@ export default function AdminDashboard() {
                               <DropdownMenuLabel>Actions</DropdownMenuLabel>
                               <DropdownMenuItem>
                                 <Eye className="mr-2 h-4 w-4" />
-                                View Details
+                                Détails
                               </DropdownMenuItem>
                               <DropdownMenuSeparator />
                               {user.status === "pending" && (
                                 <>
                                   <DropdownMenuItem onClick={() => handleUserStatusChange(user.id, "approved")}>
                                     <UserCheck className="mr-2 h-4 w-4" />
-                                    Approve
+                                    approuver
                                   </DropdownMenuItem>
                                   <DropdownMenuItem onClick={() => handleUserStatusChange(user.id, "rejected")}>
                                     <UserX className="mr-2 h-4 w-4" />
-                                    Reject
+                                    Rejecter
                                   </DropdownMenuItem>
                                 </>
                               )}
@@ -447,29 +447,29 @@ export default function AdminDashboard() {
                   <SelectValue placeholder="Filter by status" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="all">All Status</SelectItem>
-                  <SelectItem value="pending">Pending</SelectItem>
-                  <SelectItem value="confirmed">Confirmed</SelectItem>
-                  <SelectItem value="canceled">Canceled</SelectItem>
-                  <SelectItem value="completed">Completed</SelectItem>
+                  <SelectItem value="all">Tous les statuts</SelectItem>
+                  <SelectItem value="pending">En attente</SelectItem>
+                  <SelectItem value="confirmed">Confirmer</SelectItem>
+                  <SelectItem value="canceled">Annulé</SelectItem>
+                  <SelectItem value="completed">Complété</SelectItem>
                 </SelectContent>
               </Select>
             </div>
 
             <Card>
               <CardHeader>
-                <CardTitle>Reservation Management</CardTitle>
-                <CardDescription>Confirm or cancel reservations</CardDescription>
+                <CardTitle>Gestion des réservations</CardTitle>
+                <CardDescription>Confirmer ou annuler les réservations</CardDescription>
               </CardHeader>
               <CardContent>
                 <Table>
                   <TableHeader>
                     <TableRow>
-                      <TableHead>Customer</TableHead>
+                      <TableHead>Client</TableHead>
                       <TableHead>Plan</TableHead>
-                      <TableHead>Date & Time</TableHead>
+                      <TableHead>Date & Heaure</TableHead>
                       <TableHead>Location</TableHead>
-                      <TableHead>Amount</TableHead>
+                      <TableHead>Montant</TableHead>
                       <TableHead>Status</TableHead>
                       <TableHead>Actions</TableHead>
                     </TableRow>
@@ -532,7 +532,7 @@ export default function AdminDashboard() {
                               <DropdownMenuLabel>Actions</DropdownMenuLabel>
                               <DropdownMenuItem>
                                 <Eye className="mr-2 h-4 w-4" />
-                                View Details
+                                Détails
                               </DropdownMenuItem>
                               <DropdownMenuSeparator />
                               {reservation.status === "pending" && (
@@ -541,13 +541,13 @@ export default function AdminDashboard() {
                                     onClick={() => handleReservationStatusChange(reservation.id, "confirmed")}
                                   >
                                     <CheckCircle className="mr-2 h-4 w-4" />
-                                    Confirm
+                                    Confirmer
                                   </DropdownMenuItem>
                                   <DropdownMenuItem
                                     onClick={() => handleReservationStatusChange(reservation.id, "canceled")}
                                   >
                                     <XCircle className="mr-2 h-4 w-4" />
-                                    Cancel
+                                    Annuler
                                   </DropdownMenuItem>
                                 </>
                               )}
