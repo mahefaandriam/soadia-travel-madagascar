@@ -102,7 +102,7 @@ export function CarSeatSelector({
           {/* Car image */}
           <div className="mb-4 flex justify-center">
             <img
-              src={currentVehicle?.image_url || "/images/car/bus.svg"}
+              src={currentVehicle?.image_url || "/images/car/Bus.svg"}
               alt={currentVehicle?.name}
               className="h-16 object-contain rounded-md"
             />
