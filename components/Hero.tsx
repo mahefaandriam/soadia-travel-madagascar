@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const headline = 'Explorer Madagascar avec  Soa Dia Travel';
+const headline = 'Explorez Madagascar avec  Soa Dia Travel';
 
 const container = {
   hidden: {},
@@ -84,7 +84,7 @@ const Hero = () => {
               transition={{ duration: 0.6, ease: 'easeOut' }}
               className="group border border-white inline-flex items-center gap-2 hover:bg-secondary hover:text-blue-500 text-white px-6 py-3 rounded font-semibold shadow  transition cursor-pointer"
             >
-              Réserver maintenant
+              Trouvez vos destinations
               <motion.span
                 className="inline-block transition-transform duration-300 group-hover:translate-x-1"
                 whileHover={{ x: 4 }}
