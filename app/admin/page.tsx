@@ -251,7 +251,7 @@ export default function AdminDashboard() {
             <TabsTrigger value="overview">Overview</TabsTrigger>
             <TabsTrigger value="users">Users</TabsTrigger>
             <TabsTrigger value="reservations">Reservations</TabsTrigger>
-            <TabsTrigger value="settings">Settings</TabsTrigger>
+          {/*  <TabsTrigger value="settings">Settings</TabsTrigger> -*/}
           </TabsList>
 
           {/* Overview Tab */}
@@ -562,7 +562,7 @@ export default function AdminDashboard() {
             </Card>
           </TabsContent>
 
-          {/* Settings Tab */}
+          {/* Settings Tab 
           <TabsContent value="settings" className="space-y-6">
             <Card>
               <CardHeader>
@@ -596,6 +596,7 @@ export default function AdminDashboard() {
               </CardContent>
             </Card>
           </TabsContent>
+          */}
         </Tabs>
       </main>
       <Footer />
