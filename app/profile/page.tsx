@@ -145,6 +145,7 @@ export default function ProfilePage() {
 
   // Redirect if not authenticated
   useEffect(() => {
+    if (session?.user.email === "admin@soatransplus.com") router.push("/admin")
     if (status === "unauthenticated") {
       router.push("/login")
     }
