@@ -35,7 +35,7 @@ const menuItems = [
   { id: 'hero', label: 'Page d\'Accueil' },
   { id: 'about', label: 'Pourquoi Nous?' },
   { id: 'book', label: 'Réserver une Voyage' },
-  { id: 'location', label: 'Location Spécial' },
+  { id: 'tariff-plan', label: 'Nos tarifs' },
 ];
 
 export function Navbar({ isProfilePage = false }: { isProfilePage?: boolean }) {

@@ -94,7 +94,7 @@ const Hero = () => {
             </motion.button>
           </a>
           <a
-              href="#location"
+              href="#tariff-plan"
           >
              <motion.button
               whileHover={{ scale: 1.05 }}
@@ -104,7 +104,7 @@ const Hero = () => {
               transition={{ duration: 0.6, ease: 'easeOut' }}
               className="group border border-white inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded font-semibold shadow  transition cursor-pointer"
             >
-              Location
+              Tarifs
               <motion.span
                 className="inline-block transition-transform duration-300 group-hover:translate-x-1"
                 whileHover={{ x: 4 }}
