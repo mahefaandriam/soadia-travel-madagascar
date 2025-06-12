@@ -30,7 +30,7 @@ export default function LoginPage() {
   // Redirect if already logged in
   useEffect(() => {
     if (status === "authenticated") {
-      if (formData.email === "admin@soatransplus.com") router.push("/admin")
+      if (session.user.email === "admin@soatransplus.com") router.push("/admin")
       router.push("/profile")
     }
   }, [status, router])
