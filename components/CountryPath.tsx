@@ -140,7 +140,7 @@ const CountryPath = () => {
                           delay: 1500,
                           disableOnInteraction: false,
                         }}
-                        modules={[Mousewheel, Pagination]}
+                        modules={[Mousewheel, Pagination, Autoplay]}
                         className="mySwiper rounded"
                     >
                         {coutryPaths.map((c, index) => (
