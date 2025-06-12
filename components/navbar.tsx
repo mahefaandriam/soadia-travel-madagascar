@@ -280,7 +280,10 @@ function ThemeToggle({ mobile = false }: { mobile?: boolean }) {
   const { theme, setTheme } = useTheme()
 
   return (
-    <Button
+    <div></div>
+    
+  )
+  {/*<Button
       variant="ghost"
       size={mobile ? "default" : "icon"}
       onClick={() => setTheme(theme === "dark" ? "light" : "light")}
@@ -298,6 +301,5 @@ function ThemeToggle({ mobile = false }: { mobile?: boolean }) {
         </>
       )}
       <span className="sr-only">Toggle theme</span>
-    </Button>
-  )
+    </Button>*/}
 }
