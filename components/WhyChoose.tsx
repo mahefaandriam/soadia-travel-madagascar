@@ -44,19 +44,19 @@ const WhyChoose = () => {
             </ul>
             
              <div className="grid grid-cols-2 gap-4 py-4 text-center font-medium">
-                <div className="bg-gray-50 p-4 rounded-lg">
+                <div className="bg-gray-50 p-4 rounded">
                   <AnimatedCounter to={10} suffix={'+'} className="text-xl font-bold text-blue-500" />
                   <div className="text-gray-600">Villes implémentées à Madagascar</div>
                 </div>
-                <div className="bg-gray-50 p-4 rounded-lg">
+                <div className="bg-gray-50 p-4 rounded">
                   <AnimatedCounter to={4} className="text-xl font-bold text-blue-500" />
                   <div className="text-gray-600">Choix de classes à un prix abordable</div>
                 </div>
-                <div className="bg-gray-50 p-4 rounded-lg">
+                <div className="bg-gray-50 p-4 rounded">
                   <AnimatedCounter to={70} suffix={'+'} className="text-xl font-bold text-blue-500" />
                   <div className="text-gray-600">Plus de centaines de voitures en service</div>
                 </div>
-                <div className="bg-gray-50 p-4 rounded-lg">
+                <div className="bg-gray-50 p-4 rounded">
                   <AnimatedCounter to={24} suffix={'/7'} className="text-xl font-bold text-blue-500" />
                   <div className="text-gray-600">Toujours disponibles</div>
                 </div>
@@ -64,19 +64,19 @@ const WhyChoose = () => {
           </div>
 
           {/* Image */}
-          <div className="w-full h-[300px] md:h-[400px] relative ">
+          <div className="w-full h-[300px] md:h-[400px] relative">
             <Image
               src="/images/car/BusTouristique.jpg"
               alt="Comfortable bus interior"
               layout="fill"
               objectFit="cover"
-              className="rounded-lg shadow-lg"
+              className="rounded shadow"
             />
-             <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-primary rounded-lg hidden md:block">
+             <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-primary rounded hidden md:block">
                 <img
                   src="/images/car/bustouristique3.jpg"
                   alt="Detail"
-                  className="w-full h-full object-cover rounded-lg transform translate-x-4 translate-y-4 shadow-lg"
+                  className="w-full h-full object-cover rounded transform translate-x-4 translate-y-4 shadow-lg"
                 />
               </div>
           </div>
