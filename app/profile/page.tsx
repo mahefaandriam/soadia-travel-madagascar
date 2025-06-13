@@ -34,7 +34,7 @@ interface Reservation {
     seats: string[]
   }
   paymentMethod: string
-  status: "upcoming" | "completed" | "canceled"
+  status: "pending" | "upcoming" | "completed" | "canceled" 
 }
 
 export default function ProfilePage() {
@@ -160,6 +160,8 @@ export default function ProfilePage() {
   }
 
   // Filter reservations by status
+
+  const pendingReservations = reservations.filter((res) => res.status === "pending")
   const upcomingReservations = reservations.filter((res) => res.status === "upcoming")
   const pastReservations = reservations.filter((res) => res.status === "completed" || res.status === "canceled")
 
@@ -190,7 +192,7 @@ export default function ProfilePage() {
                 )}
                 <div className="space-y-4">
                   <div className="flex items-center">
-                    <Badge className="mr-2">{upcomingReservations.length}</Badge>
+                    <Badge className="mr-2">{upcomingReservations.length + pendingReservations.length}</Badge>
                     <span>Prochaines réservations</span>
                   </div>
                   <div className="flex items-center">
@@ -265,11 +267,16 @@ export default function ProfilePage() {
                   <div className="flex justify-center py-12">
                     <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
                   </div>
-                ) : upcomingReservations.length > 0 ? (
-                  upcomingReservations.map((reservation) => (
-                    <ReservationCard key={reservation.id} reservation={reservation} />
-                  ))
-                ) : (
+                ) : upcomingReservations.length > 0 || pendingReservations.length > 0? (
+                  <>
+                    {upcomingReservations.map((reservation) => (
+                      <ReservationCard key={reservation.id} reservation={reservation} />
+                    ))}
+                    {pendingReservations.map((reservation) => (
+                      <ReservationCard key={reservation.id} reservation={reservation} />
+                    ))}
+                  </>
+                )  : (
                   <Card>
                     <CardContent className="py-10 text-center">
                       <p className="text-gray-500 dark:text-gray-400">Vous n'avez pas de prochaines réservations</p>

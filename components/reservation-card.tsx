@@ -26,7 +26,7 @@ interface Reservation {
     seats: string[]
   }
   paymentMethod: string
-  status: "upcoming" | "completed" | "canceled"
+  status: "pending" | "upcoming" | "completed" | "canceled"
 }
 
 interface ReservationCardProps {
