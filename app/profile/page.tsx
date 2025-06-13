@@ -225,14 +225,14 @@ export default function ProfilePage() {
                       <User className="mr-2 h-4 w-4" />
                       Information du compte
                     </Button>
-                    <Button
+                    {/*<Button
                       variant={activeTab === "settings" ? "default" : "ghost"}
                       className="w-full justify-start"
                       onClick={() => setActiveTab("settings")}
                     >
                       <Settings className="mr-2 h-4 w-4" />
                       Paramètres
-                    </Button>
+                    </Button>*/}
                     <Separator className="my-2" />
                     <Button
                       variant="ghost"
@@ -255,7 +255,7 @@ export default function ProfilePage() {
                 <TabsTrigger value="upcoming">Prochain</TabsTrigger>
                 <TabsTrigger value="past">Passé</TabsTrigger>
                 <TabsTrigger value="account">Compte</TabsTrigger>
-                <TabsTrigger value="settings">Paramètres</TabsTrigger>
+               {/* <TabsTrigger value="settings">Paramètres</TabsTrigger> */}
               </TabsList>
 
               {/* Prochaines réservations Tab */}
