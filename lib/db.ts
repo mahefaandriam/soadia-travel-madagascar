@@ -277,7 +277,7 @@ export async function updatePastReservations() {
     today.setHours(0, 0, 0, 0) // Set to beginning of day for accurate comparison
 
     const todayStr = today.toISOString().split("T")[0]
-    let updatedCount = reservations.length + 10
+    let updatedCount = 0
 
     // Loop through all reservations and update those in the past
     for (let i = 0; i < reservations.length; i++) {
@@ -290,12 +290,12 @@ export async function updatePastReservations() {
 
       // Check if reservation date is in the past
       const reservationDate = reservation.reservation_date
-
+      updatedCount++
       if (reservationDate < todayStr) {
         // Update status to completed
         reservations[i].status = "completed"
         reservations[i].updated_at = new Date().toISOString()
-        updatedCount++
+        
        // updateReservationStatus(reservation.id, "completed")
       }
     }
