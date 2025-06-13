@@ -34,7 +34,7 @@ const navItems: NavItem[] = [
 const menuItems = [
   { id: 'hero', label: 'Page d\'Accueil' },
   { id: 'about', label: 'Pourquoi Nous?' },
-  { id: 'book', label: 'Réserver une Voyage' },
+  { id: 'book', label: 'Réserver un Voyage' },
   { id: 'tariff-plan', label: 'Nos tarifs' },
 ];
 

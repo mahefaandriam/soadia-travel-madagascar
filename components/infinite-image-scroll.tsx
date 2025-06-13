@@ -20,28 +20,28 @@ const scrollItems: ScrollItem[] = [
     description: "Capitale politique et économique, Antananarivo est une ville perchée sur des collines, mêlant histoire royale, marchés animés et quartiers modernes. On y trouve le Palais de la Reine, des vues panoramiques et une vie culturelle riche.",
     imageUrl: "/images/place/Antananarivo-imp.jpg",
     plan: "VIP, Premium, LITE, VIP +",
-  },
+  },/*
   {
     id: 2,
     title: "Tamatave",
     description: "Située sur la côte Est, Toamasina est le principal port du pays. Son climat tropical, ses plages, et son rôle central dans le commerce en font une ville stratégique, vivante et accueillante.",
     imageUrl: "/images/place/Toamasina-imp.jpg",
     plan: "VIP, Premium",
-  },
+  },*/
   {
     id: 3,
     title: "Fianarantsoa",
     description: "Cité universitaire et religieuse, Fianarantsoa est le cœur culturel des hauts plateaux du sud. Elle est aussi le point de départ pour explorer les vignobles, le parc de Ranomafana, et les villages traditionnels.",
     imageUrl: "/images/place/Fianarantsoa-imp.jpg",
     plan: "Premium",
-  },
+  },/*
   {
     id: 4,
-    title: "Majanga",
+    title: "Mahajanga",
     description: "Célèbre pour sa promenade en bord de mer, son célèbre baobab géant et son ambiance paisible, Mahajanga est une ville portuaire du nord-ouest prisée pour les vacances et les couchers de soleil.",
     imageUrl: "/images/place/Mahajanga-imp.webp",
     plan: "VIP +, Premium",
-  },
+  },*/
   {
     id: 5,
     title: "Antsirabe",
