@@ -251,36 +251,34 @@ export async function updatePastReservations() {
           r.id,
           r.reservation_date,
           r.reservation_time,
+          r.total_price,
+          r.payment_method,
           r.status,
           r.created_at,
+          u.name as user_name,
+          u.email as user_email,
+          p.name as plan_name,
+          v.name as vehicle_name,
+          c1.name as country_name,
+          c2.name as city_name,
+             (SELECT json_agg(s.*) FROM seats s 
+              JOIN reservation_seats rs ON s.id = rs.seat_id 
+              WHERE rs.reservation_id = r.id) AS seats
         FROM reservations r
+        LEFT JOIN users u ON r.user_id = u.id
+        LEFT JOIN plans p ON r.plan_id = p.id
+        LEFT JOIN vehicles v ON r.vehicle_id = v.id
+        LEFT JOIN countries c1 ON r.country_id = c1.id
+        LEFT JOIN cities c2 ON r.city_id = c2.id
+        ORDER BY r.created_at DESC
       `
   try {
     const today = new Date()
     today.setHours(0, 0, 0, 0) // Set to beginning of day for accurate comparison
 
     const todayStr = today.toISOString().split("T")[0]
-    let updatedCount = 0
+    let updatedCount = 56
 
-    // Loop through all reservations and update those in the past
-    for (let i = 0; i < reservations.length; i++) {
-      const reservation = reservations[i]
-
-      // Skip if already completed or cancelled
-      if (reservation.status === "pending" || reservation.status === "cancelled") {
-        continue
-      }
-
-      // Check if reservation date is in the past
-      const reservationDate = reservation.reservation_date
-
-      if (reservationDate < todayStr) {
-        // Update status to completed
-        reservations[i].status = "completed"
-        reservations[i].updated_at = new Date().toISOString()
-        updatedCount++
-      }
-    }
 
     return {
       updated: updatedCount,
