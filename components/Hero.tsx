@@ -104,7 +104,7 @@ const Hero = () => {
               transition={{ duration: 0.6, ease: 'easeOut' }}
               className="group border border-white inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded font-semibold shadow  transition cursor-pointer"
             >
-              Tarifs
+              Réservez
               <motion.span
                 className="inline-block transition-transform duration-300 group-hover:translate-x-1"
                 whileHover={{ x: 4 }}
