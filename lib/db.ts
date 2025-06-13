@@ -296,7 +296,7 @@ export async function updatePastReservations() {
         reservations[i].status = "completed"
         reservations[i].updated_at = new Date().toISOString()
         updatedCount++
-        updateReservationStatus(reservation.id, "completed")
+       // updateReservationStatus(reservation.id, "completed")
       }
     }
 
