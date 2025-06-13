@@ -41,7 +41,7 @@ export function ReservationCard({ reservation }: ReservationCardProps) {
   // Determine badge color based on status
   const getBadgeVariant = (status: string) => {
     switch (status) {
-      case "peding":
+      case "pending":
         return "outline"
       case "upcoming":
         return "default"
@@ -57,7 +57,7 @@ export function ReservationCard({ reservation }: ReservationCardProps) {
   // Format status text
   const getStatusText = (status: string) => {
     switch (status) {
-      case "peding":
+      case "pending":
         return "outline"
       case "upcoming":
         return "Prochainement"
