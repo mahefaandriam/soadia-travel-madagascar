@@ -49,6 +49,7 @@ interface Reservation {
   country_name: string
   city_name: string
   payment_method: string
+  payment_ref: string
   created_at: string
 }
 
@@ -131,6 +132,7 @@ export default function AdminDashboard() {
           country_name: res.country_name,
           city_name: res.city_name,
           payment_method: res.payment_method,
+          payment_ref: res.payment_ref,
           created_at: res.created_at
         }))
 
@@ -487,7 +489,7 @@ export default function AdminDashboard() {
                 <SelectContent>
                   <SelectItem value="all">Tous les statuts</SelectItem>
                   <SelectItem value="pending">En attente</SelectItem>
-                  <SelectItem value="confirmed">Confirmer</SelectItem>
+                  <SelectItem value="upcoming">Confirmer</SelectItem>
                   <SelectItem value="canceled">Annulé</SelectItem>
                   <SelectItem value="completed">Complété</SelectItem>
                 </SelectContent>
@@ -550,6 +552,7 @@ export default function AdminDashboard() {
                         <TableCell>
                           <div className="font-medium">${reservation.total_price}</div>
                           <div className="text-sm text-gray-500">{reservation.payment_method}</div>
+                          <div className="text-sm text-gray-500">{reservation.payment_ref}</div>
                         </TableCell>
                         <TableCell>
                           <Badge

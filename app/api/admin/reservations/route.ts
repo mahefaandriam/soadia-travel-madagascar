@@ -20,6 +20,7 @@ export async function GET() {
         r.reservation_time,
         r.total_price,
         r.payment_method,
+        r.payment_ref,
         r.status,
         r.created_at,
         u.name as user_name,
