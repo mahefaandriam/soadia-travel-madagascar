@@ -274,9 +274,9 @@ export async function updatePastReservations() {
       `
   try {
     const today = new Date()
-    today.setHours(0, 0, 0, 0) // Set to beginning of day for accurate comparison
+    //today.setHours(0, 0, 0, 0) // Set to beginning of day for accurate comparison
 
-    const todayStr = today.toISOString().split("T")[0]
+    const todayStr = today.toISOString()
     let updatedCount = 0
     let log = ""
 
@@ -290,7 +290,7 @@ export async function updatePastReservations() {
       }
 
       // Check if reservation date is in the past
-      const reservationDate = reservation.reservation_date
+      const reservationDate = reservation.reservation_date + reservation.reservation_time
       updatedCount++
       log = reservationDate + "/" + todayStr
       if (reservationDate < todayStr) {
@@ -304,7 +304,7 @@ export async function updatePastReservations() {
 
     return {
       updated: updatedCount,
-      timestamp: log + "dd",
+      timestamp: log ,
     }
   } catch (error) {
     console.error("Error updating past reservations:", error)
