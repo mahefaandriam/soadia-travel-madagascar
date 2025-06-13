@@ -44,7 +44,7 @@ interface Reservation {
   reservation_time: string
   seats: string[]
   total_price: number
-  status: "pending" | "confirmed" | "canceled" | "completed"
+  status: "pending" | "confirmed" | "canceled" | "completed" | "upcoming"
   country_name: string
   city_name: string
   payment_method: string
@@ -188,7 +188,7 @@ export default function AdminDashboard() {
     }
   }
 
-  const handleReservationStatusChange = async (reservationId: string, newStatus: "confirmed" | "canceled") => {
+  const handleReservationStatusChange = async (reservationId: string, newStatus: "upcoming" | "canceled") => {
     try {
       const response = await fetch("/api/admin/reservations", {
         method: "PATCH",
@@ -561,7 +561,7 @@ export default function AdminDashboard() {
                                     : "destructive"
                             }
                           >
-                            {reservation.status}
+                            {getStatusText(reservation.status)}
                           </Badge>
                         </TableCell>
                         <TableCell>
@@ -581,7 +581,7 @@ export default function AdminDashboard() {
                               {reservation.status === "pending" && (
                                 <>
                                   <DropdownMenuItem
-                                    onClick={() => handleReservationStatusChange(reservation.id, "confirmed")}
+                                    onClick={() => handleReservationStatusChange(reservation.id, "upcoming")}
                                   >
                                     <CheckCircle className="mr-2 h-4 w-4" />
                                     Confirmer
