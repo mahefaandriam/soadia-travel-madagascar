@@ -211,15 +211,15 @@ const swipeLayout = (swipe: CountryPathType) => {
                         </div>
                     </div>
                 </div>
-                <div className='relative flex flex-row text-xs w-full'>
-                    <div className='flex justify-center grow'>
-                        <MapPin size={15} className='flex'/> {swipe.locationStart}
+                <div className='relative grid grid-cols-3 text-xs w-full'>
+                    <div className='flex justify-center col-span-1'>
+                        <MapPin size={15} className='w-5 flex-none'/> {swipe.locationStart}
                     </div>
-                    <div className='flex justify-center grow'>
-                        <MapPin size={15} className='flex'/> {swipe.locationMid}
+                    <div className='flex justify-center col-span-1'>
+                        <MapPin size={15} className='w-5 flex-none'/> {swipe.locationMid}
                     </div>
-                    <div className='flex justify-center grow'>
-                        <MapPin size={15} className='flex'/> {swipe.locationEnd}
+                    <div className='flex justify-center col-span-1'>
+                        <MapPin size={15} className='w-5 flex-none'/> {swipe.locationEnd}
                     </div>
                 </div>
             </div>
