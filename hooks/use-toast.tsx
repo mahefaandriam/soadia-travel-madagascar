@@ -58,11 +58,12 @@ function ToastContainer() {
       {toasts.map((toast) => (
         <div
           key={toast.id}
-          className={`relative p-4 rounded-md shadow-lg max-w-sm transform transition-all duration-300 ease-in-out ${
+          className={`relative p-4 rounded shadow-lg max-w-sm transform transition-all duration-300 ease-in-out ${
             toast.variant === "destructive"
-              ? "bg-red-600 text-white"
-              : "bg-red-800 text-gray-900 dark:bg-gray-800 dark:text-gray-100"
+              ? " text-white"
+              : "text-white"
           }`}
+          style={ toast.variant === "destructive" ? { backgroundColor: '#dc2626' } : { backgroundColor: '#16a34a' } }
         >
           {toast.title && <h4 className="font-medium">{toast.title}</h4>}
           {toast.description && <p className="text-sm">{toast.description}</p>}
