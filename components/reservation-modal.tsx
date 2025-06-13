@@ -33,7 +33,7 @@ import { useToast } from "@/hooks/use-toast"
 
 // Payment methods
 const paymentMethods = [
-  { id: "oragemoney", name: "OrangeMoney : 032 22 222 22", icon: "/images/car/Bus.svg" },
+  { id: "oragemoney", name: "OrangeMoney : 032 22 222 22", icon: "/images/people/orange.webp" },
  /* { id: "paypal", name: "PayPal", icon: "🅿️" },
   { id: "btc", name: "Bitcoin", icon: "₿" },*/
 ]
@@ -481,7 +481,7 @@ export function ReservationModal({ isOpen, onClose, selectedPlan }: ReservationM
                 <h4 className="font-medium text-gray-700 dark:text-gray-300">Mode de paiement</h4>
                 {paymentMethod ? (
                   <div className="mt-2 flex items-center">
-                    <span className="text-xl mr-2">{paymentMethods.find((m) => m.id === paymentMethod)?.icon}</span>
+                    <span className="text-xl mr-2"><img src={paymentMethods.find((m) => m.id === paymentMethod)?.icon} alt="Payment 1" /></span>
                     <span className="font-medium dark:text-white">
                       {paymentMethods.find((m) => m.id === paymentMethod)?.name}
                     </span>
