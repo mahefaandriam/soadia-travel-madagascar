@@ -193,7 +193,7 @@ export function ReservationModal({ isOpen, onClose, selectedPlan }: ReservationM
   })
 
   // Check if form is complete
-  const isFormComplete = country && city && date && time && paymentMethod && selectedSeats.length > 0
+  const isFormComplete = country && city && date && time && paymentMethod && paymentRef && selectedSeats.length > 0
 
   // Calculate total price based on selected plan and number of seats
   const calculateTotal = () => {

@@ -284,7 +284,7 @@ export async function updatePastReservations() {
       const reservation = reservations[i]
 
       // Skip if already completed or cancelled
-      if (reservation.status === "pending" || reservation.status === "cancelled") {
+      if (reservation.status === "pending" || reservation.status === "cancelled" || reservation.status === "completed") {
         continue
       }
 
