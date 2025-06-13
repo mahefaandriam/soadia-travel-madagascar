@@ -185,8 +185,8 @@ export function ReservationModal({ isOpen, onClose, selectedPlan }: ReservationM
   }
 
   // Generate time slots from 9 AM to 6 PM
-  const timeSlots = Array.from({ length: 10 }, (_, i) => {
-    const hour = i + 9
+  const timeSlots = Array.from({ length: 4 }, (_, i) => {
+    const hour = i + 10
     return `${hour > 12 ? hour - 12 : hour}:00 ${hour >= 12 ? "PM" : "AM"}`
   })
 

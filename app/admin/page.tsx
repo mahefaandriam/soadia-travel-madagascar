@@ -421,10 +421,10 @@ export default function AdminDashboard() {
                             </DropdownMenuTrigger>
                             <DropdownMenuContent align="end">
                               <DropdownMenuLabel>Actions</DropdownMenuLabel>
-                              <DropdownMenuItem>
+                             {/*} <DropdownMenuItem>
                                 <Eye className="mr-2 h-4 w-4" />
                                 Détails
-                              </DropdownMenuItem>
+                              </DropdownMenuItem>*/}
                               <DropdownMenuSeparator />
                               {user.status === "pending" && (
                                 <>
@@ -556,10 +556,10 @@ export default function AdminDashboard() {
                             </DropdownMenuTrigger>
                             <DropdownMenuContent align="end">
                               <DropdownMenuLabel>Actions</DropdownMenuLabel>
-                              <DropdownMenuItem>
+                             {/*<DropdownMenuItem>
                                 <Eye className="mr-2 h-4 w-4" />
                                 Détails
-                              </DropdownMenuItem>
+                              </DropdownMenuItem>*/}
                               <DropdownMenuSeparator />
                               {reservation.status === "pending" && (
                                 <>
