@@ -118,7 +118,7 @@ export function Navbar({ isProfilePage = false }: { isProfilePage?: boolean }) {
             mobileMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 pointer-events-none",
           )}
         >
-          <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
+          <div className="mx-auto px-4 py-4 flex flex-col space-y-4">
             {menuItems.map((item) => (
               <Link
                 key={item.id}

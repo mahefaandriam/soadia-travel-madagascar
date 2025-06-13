@@ -12,7 +12,7 @@ import Footer from "@/components/Footer"
 
 export default function Home() {
   return (
-    <div className="min-h-screen overflow-x-hidden">
+    <div className="">
       <Navbar />
       <main className="overflow-visible">
         {/* Hero Section  */}

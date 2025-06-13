@@ -19,9 +19,9 @@ const CountryPhares = () => {
                     Partez à la découverte d’<strong>Antananarivo</strong>, la capitale perchée sur ses collines, <strong>Mahajanga</strong> et ses plages animées, ou encore <strong>Antsirabe</strong>, réputée pour ses sources thermales. Chaque ville offre une expérience unique, entre histoire, traditions et paysages à couper le souffle.
                 </p>
             </div>
-            <div className="relative container mx-auto mt-6 px-6">                
+            <div className="relative mt-6 px-6">                
                 <div className="grid grid-cols-1 md:grid-cols-3 h-[550px] md:h-[200px] gap-8">
-                    <div className="col-span-1 overflow-hidden rounded-lg">             
+                    <div className="col-span-1 overflow-hidden rounded">             
                         <div className="bg-cover bg-center h-full transition-all duration-500 hover:scale-105"
                         style={{ backgroundImage : 'url(/images/place/Antananarivo-imp.jpg)' }}>
                             <div className="flex items-center justify-center w-full h-full bg-gray-800/25">
@@ -31,7 +31,7 @@ const CountryPhares = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-1 overflow-hidden rounded-lg">             
+                    <div className="col-span-1 overflow-hidden rounded">             
                         <div className="bg-cover bg-center h-full transition-all duration-500 hover:scale-105"
                         style={{ backgroundImage : 'url(/images/place/Fianarantsoa-imp.jpg)' }}>
                             <div className="flex items-center justify-center w-full h-full bg-gray-800/25">
@@ -41,7 +41,7 @@ const CountryPhares = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-1 overflow-hidden rounded-lg">             
+                    <div className="col-span-1 overflow-hidden rounded">             
                         <div className="bg-cover bg-center h-full transition-all duration-500 hover:scale-105"
                         style={{ backgroundImage : 'url(/images/place/Antsirabe-imp.jpg)' }}>
                             <div className="flex items-center justify-center w-full h-full bg-gray-800/25">

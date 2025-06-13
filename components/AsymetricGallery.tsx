@@ -4,7 +4,7 @@ const AsymetricGallery = () => {
     return (
         <>
             <section className="pt-16 bg-white text-gray-800">
-                <div className="text-center mx-6 md:mx-80 mb-6">
+                <div className="text-center mx-6 lg:mx-80 mb-6">
                     <h2 className="text-2xl md:text-3xl font-bold text-sky-950 mb-4">
                         Notre équipe et nos services
                     </h2>
@@ -15,7 +15,7 @@ const AsymetricGallery = () => {
                         Notre équipe passionnée met tout en œuvre pour vous offrir un service personnalisé, adapté à vos besoins et à vos envies. Faites confiance à notre expertise pour transformer chaque trajet en un moment d&apos;exception.
                     </p>
                 </div>        
-                <div className="grid col-span-10 grid-cols-10 md:grid-cols-9 gap-4 mx-6 md:mx-40 h-[550px] md:h-90">
+                <div className="grid col-span-10 grid-cols-10 md:grid-cols-9 gap-4 mx-6 lg:mx-40 h-[550px] md:h-90">
                     {/* Top Row */}
                     <div className="relative col-span-10 md:col-span-5 h-50 overflow-hidden">
                         <div className="h-full w-full bg-cover bg-center hover:scale-110 transition-all duration-500" 

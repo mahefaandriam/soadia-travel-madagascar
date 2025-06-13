@@ -118,8 +118,8 @@ const CountryPath = () => {
     return (
         <>
         <section id='book' className="pt-16 overflow-hidden bg-c1 text-primary border-x">
-            <div className='container space-y-6 '>
-                <div className="text-center mx-6 md:mx-80">
+            <div className='space-y-6 '>
+                <div className="text-center mx-6 lg:mx-80">
                     <h2 className="text-2xl md:text-3xl font-bold text-sky-950 mb-4">
                         Découvrez nos itinéraires touristiques en bus à Madagascar
                     </h2>

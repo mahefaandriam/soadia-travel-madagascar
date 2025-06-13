@@ -18,9 +18,9 @@ const WhyChoose = () => {
           {/* Overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-white/80 to-blue-500/80 dark:from-primary/90 dark:to-blue-900/90 "></div>
         </div>
-        <div className="relative container mx-auto px-6 grid md:grid-cols-2 gap-10">
+        <div className="relative grid md:grid-cols-2 gap-10 w-full">
           {/* Text Content */}
-          <div>
+          <div className='px-6'>
             <h2 className="text-2xl md:text-3xl font-bold mb-4 text-sky-950">
               Pourquoi choisir Soa Dia Travel?
             </h2>
@@ -64,7 +64,7 @@ const WhyChoose = () => {
           </div>
 
           {/* Image */}
-          <div className="w-full h-[300px] md:h-[400px] relative">
+          <div className="w-full h-[300px] md:h-[400px] relative ">
             <Image
               src="/images/car/BusTouristique.jpg"
               alt="Comfortable bus interior"
