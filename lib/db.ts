@@ -277,7 +277,7 @@ export async function updatePastReservations() {
     today.setHours(0, 0, 0, 0) // Set to beginning of day for accurate comparison
 
     const todayStr = today.toISOString().split("T")[0]
-    let updatedCount = 0
+    let updatedCount = reservations.length + 10
 
     // Loop through all reservations and update those in the past
     for (let i = 0; i < reservations.length; i++) {
