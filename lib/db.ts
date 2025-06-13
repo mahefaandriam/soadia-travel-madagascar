@@ -252,7 +252,8 @@ export async function updatePastReservations() {
           r.reservation_date,
           r.reservation_time,
           r.status,
-          r.created_at
+          r.created_at,
+        FROM reservations r
       `
   try {
     const today = new Date()
