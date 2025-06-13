@@ -42,6 +42,7 @@ interface Reservation {
   vehicle_name: string
   reservation_date: string
   reservation_time: string
+  seats: string[]
   total_price: number
   status: "pending" | "confirmed" | "canceled" | "completed"
   country_name: string
@@ -487,6 +488,13 @@ export default function AdminDashboard() {
                           <div>
                             <div className="font-medium">{reservation.plan_name}</div>
                             <div className="text-sm text-gray-500">{reservation.vehicle_name}</div>
+                            <div className="flex flex-wrap gap-1 mt-1">
+                              {reservation.seats.map((seat) => (
+                                <Badge key={seat} variant="outline" className="text-xs">
+                                  {seat}
+                                </Badge>
+                              ))}
+                            </div>
                           </div>
                         </TableCell>
                         <TableCell>

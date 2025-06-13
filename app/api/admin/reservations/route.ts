@@ -27,7 +27,10 @@ export async function GET() {
         p.name as plan_name,
         v.name as vehicle_name,
         c1.name as country_name,
-        c2.name as city_name
+        c2.name as city_name,
+           (SELECT json_agg(s.*) FROM seats s 
+            JOIN reservation_seats rs ON s.id = rs.seat_id 
+            WHERE rs.reservation_id = r.id) AS seats
       FROM reservations r
       LEFT JOIN users u ON r.user_id = u.id
       LEFT JOIN plans p ON r.plan_id = p.id
