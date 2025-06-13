@@ -145,7 +145,7 @@ export async function createReservation(data: any) {
     city_id,
     payment_method,
     total_price,
-    status = "upcoming",
+    status = "pending",
     selected_seats,
   } = data
 
