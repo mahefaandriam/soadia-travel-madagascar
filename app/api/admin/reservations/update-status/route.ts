@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server"
 import { getServerSession } from "next-auth/next"
 import { authOptions } from "@/app/api/auth/[...nextauth]/route"
+import { updatePastReservations } from "@/lib/db"
 
 export async function POST(request: Request) {
   try {
@@ -15,9 +16,10 @@ export async function POST(request: Request) {
     }
     
     console.log("there1");
-    
+    // Update past reservations
+
     return NextResponse.json({
-      success: true
+      success: true,
     })
   } catch (error) {
     console.error("Error in update-status endpoint:", error)
