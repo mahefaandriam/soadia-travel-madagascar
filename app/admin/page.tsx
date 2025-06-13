@@ -116,8 +116,26 @@ export default function AdminDashboard() {
       const reservationsResponse = await fetch("/api/admin/reservations")
       if (reservationsResponse.ok) {
         const reservationsData = await reservationsResponse.json()
-        setReservations(reservationsData)
+        const formattedReservations = reservationsData.map((res: any) => ({
+          id: res.id.toString(),
+          user_name : res.user_name,
+          user_email : res.user_email,
+          plan_name : res.plan_name,
+          vehicle_name : res.vehicle_name,
+          reservation_date : new Date(res.reservation_date),
+          reservation_time : res.reservation_time,
+          seats: res.seats ? res.seats.map((seat: any) => seat.seat_id) : [],
+          total_price : res.total_price,
+          status : res.status,
+          country_name: res.country_name,
+          city_name: res.city_name,
+          payment_method: res.payment_method,
+          created_at: res.created_at
+        }))
+
+        setReservations(formattedReservations)
       }
+      
 
       // Fetch stats
       const statsResponse = await fetch("/api/admin/stats")
