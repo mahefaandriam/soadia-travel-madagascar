@@ -12,7 +12,7 @@ export async function POST(request: Request) {
     }
 
     if (password.length < 8) {
-      return NextResponse.json({ error: "Password must be at least 8 characters long" }, { status: 400 })
+      return NextResponse.json({ error: "Le mot de passe doit contenir au moins 8 caractères" }, { status: 400 })
     }
 
     // Check if user already exists

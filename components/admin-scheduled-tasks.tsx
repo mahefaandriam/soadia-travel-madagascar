@@ -15,14 +15,24 @@ export function AdminScheduledTasks() {
   const updatePastReservations = async () => {
     try {
       setIsUpdating(true)
-
-      const response = await fetch("/api/admin/reservations/update-status")
-
-      if (!response.ok) {
-        throw new Error("Failed to update reservations")
-      }
+      
+      const response = await fetch("/api/admin/reservations/update-status", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: "",
+          email: "",
+          password: "",
+        }),
+      })
 
       const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to register")
+      }
     
       setLastRun(data.timestamp)
       setUpdatedCount(data.updated)

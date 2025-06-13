@@ -45,8 +45,8 @@ export default function RegisterPage() {
 
     if (formData.password.length < 8) {
       toast({
-        title: "Password too short",
-        description: "Password must be at least 8 characters long.",
+        title: "Mot de passe trop court",
+        description: "Le mot de passe doit contenir au moins 8 caractères.",
         variant: "destructive",
       })
       return
