@@ -157,13 +157,13 @@ const Testamonials = () => {
             <div className="relative space-y-6 col-span-2 md:col-span-1">
                 <div className="text-left ml-6 mr-6 md:mr-150">
                     <h2 className="text-2xl md:text-3xl font-bold text-sky-950 mb-4">
-                        Ce Qu&quot;ils Disent de Nous
+                        Ce Qu&#39;ils Disent de Nous
                     </h2>
                     <p className="text-sm text-gray-500 mb-6">
                         Des clients satisfaits, des trajets réussis.
                     </p>
                     <p className="text-gray-500">
-                        Chaque trajet compte, et chaque retour d&quot;expérience nous touche. Merci à nos clients pour leur confiance ! Qu&quot;il s&quot;agisse d&quot;un simple trajet en bus ou d&quot;un service VIP avec chauffeur, ils partagent leurs impressions — et nous, on en est fiers.
+                        Chaque trajet compte, et chaque retour d&#39;expérience nous touche. Merci à nos clients pour leur confiance ! Qu&#39;il s&#39;agisse d&#39;un simple trajet en bus ou d&#39;un service VIP avec chauffeur, ils partagent leurs impressions — et nous, on en est fiers.
                     </p>
                     <div className="absolute top-0 right-50 opacity-10 z-50">
                            <Quote size={250} opacity={50}  strokeWidth={1} />
