@@ -17,9 +17,11 @@ export async function POST(request: Request) {
     
     console.log("there1");
     // Update past reservations
+    const result = await updatePastReservations()
 
     return NextResponse.json({
       success: true,
+      ...result,
     })
   } catch (error) {
     console.error("Error in update-status endpoint:", error)
