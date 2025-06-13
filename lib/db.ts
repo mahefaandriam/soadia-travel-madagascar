@@ -239,3 +239,54 @@ export async function updateReservationStatus(id: number, status: string) {
 
   return result.length > 0 ? result[0] : null
 }
+
+/**
+ * Updates the status of reservations that have passed their date
+ * @returns Object containing the count of updated reservations
+ */
+export async function updatePastReservations() {
+
+  const reservations = await sql`
+        SELECT 
+          r.id,
+          r.reservation_date,
+          r.reservation_time,
+          r.status,
+          r.created_at
+      `
+  try {
+    const today = new Date()
+    today.setHours(0, 0, 0, 0) // Set to beginning of day for accurate comparison
+
+    const todayStr = today.toISOString().split("T")[0]
+    let updatedCount = 0
+
+    // Loop through all reservations and update those in the past
+    for (let i = 0; i < reservations.length; i++) {
+      const reservation = reservations[i]
+
+      // Skip if already completed or cancelled
+      if (reservation.status === "pending" || reservation.status === "cancelled") {
+        continue
+      }
+
+      // Check if reservation date is in the past
+      const reservationDate = reservation.reservation_date
+
+      if (reservationDate < todayStr) {
+        // Update status to completed
+        reservations[i].status = "completed"
+        reservations[i].updated_at = new Date().toISOString()
+        updatedCount++
+      }
+    }
+
+    return {
+      updated: updatedCount,
+      timestamp: new Date().toISOString(),
+    }
+  } catch (error) {
+    console.error("Error updating past reservations:", error)
+    throw error
+  }
+}

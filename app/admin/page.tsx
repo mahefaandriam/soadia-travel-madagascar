@@ -23,6 +23,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { format } from "date-fns"
+import { AdminScheduledTasks } from "@/components/admin-scheduled-tasks"
 
 interface User {
   id: string
@@ -287,6 +288,7 @@ export default function AdminDashboard() {
             <TabsTrigger value="overview">Aperçu</TabsTrigger>
             <TabsTrigger value="users">Utilisateurs</TabsTrigger>
             <TabsTrigger value="reservations">Reservations</TabsTrigger>
+            <TabsTrigger value="system">System</TabsTrigger>
           {/*  <TabsTrigger value="settings">Settings</TabsTrigger> -*/}
           </TabsList>
 
@@ -605,6 +607,10 @@ export default function AdminDashboard() {
             </Card>
           </TabsContent>
 
+          {/* Settings sytem */} 
+          <TabsContent value="system" className="space-y-4">
+            <AdminScheduledTasks />
+          </TabsContent>
           {/* Settings Tab 
           <TabsContent value="settings" className="space-y-6">
             <Card>
