@@ -425,7 +425,9 @@ export function ReservationModal({ isOpen, onClose, selectedPlan }: ReservationM
                 <Input
                     id="ref"
                     name="payment_ref"
-                    type="ref"
+                    type="text"
+                    value={paymentRef}
+                    onChange={(e) => setPaymentRef(e.target.value)}
                     placeholder="Référence du paiement"
                     required
                 />
@@ -502,7 +504,7 @@ export function ReservationModal({ isOpen, onClose, selectedPlan }: ReservationM
                         type="ref"
                         value={paymentRef}
                         placeholder="Référence du paiement"
-                        readOnly
+                        disabled
                     />
                   </div>
                 ) : (

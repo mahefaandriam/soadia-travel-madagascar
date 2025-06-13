@@ -552,7 +552,7 @@ export default function AdminDashboard() {
                         <TableCell>
                           <div className="font-medium">${reservation.total_price}</div>
                           <div className="text-sm text-gray-500">{reservation.payment_method}</div>
-                          <div className="text-sm text-gray-500">{reservation.payment_ref}</div>
+                          <div className="text-sm text-gray-500">réf:{reservation.payment_ref}</div>
                         </TableCell>
                         <TableCell>
                           <Badge
