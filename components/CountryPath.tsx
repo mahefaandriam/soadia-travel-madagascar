@@ -35,7 +35,7 @@ const coutryPaths: CountryPathType[] = [
         end: "Antsirabe",
         locationStart : "Antananarivo",
         locationMid: "Place de l'artisanat en Aluminium Ambatolampy",
-        locationEnd: "Gara Antsirabe",
+        locationEnd: "Antsirabe",
         imgUrl_coutryStart: "Antananarivo-imp.jpg",
         imgUrl_coutryMid: "Ambatolampy-imp.jpg",
         imgUrl_coutryEnd: "Antsirabe-imp.jpg",
@@ -47,9 +47,9 @@ const coutryPaths: CountryPathType[] = [
         start: "Antsirabe",
         mid: "Miandrivazo",
         end: "Morondava",
-        locationStart : "Gara Antsirabe",
+        locationStart : "Antsirabe",
         locationMid: "Descente du fleuve Tsiribihina",
-        locationEnd: "Avenue of the Baobabs",
+        locationEnd: "Avenue des Baobabs",
         imgUrl_coutryStart: "Antsirabe-imp.jpg",
         imgUrl_coutryMid: "Tsiribihina.jpeg",
         imgUrl_coutryEnd: "Morondava-imp.jpg",
@@ -61,7 +61,7 @@ const coutryPaths: CountryPathType[] = [
         start: "Antsirabe",
         mid: "Ambositra",
         end: "Fianarantsoa",
-        locationStart : "Gara Antsirabe",
+        locationStart : "Antsirabe",
         locationMid: "Ambositra pour l'artisanat en bois Zafimaniry",
         locationEnd: "Fianaratsoa",
         imgUrl_coutryStart: "Antsirabe-imp.jpg",
@@ -140,7 +140,7 @@ const CountryPath = () => {
                           delay: 1500,
                           disableOnInteraction: false,
                         }}
-                        modules={[Mousewheel, Pagination, Autoplay]}
+                        modules={[Mousewheel, Pagination]}
                         className="mySwiper rounded"
                     >
                         {coutryPaths.map((c, index) => (
