@@ -66,7 +66,7 @@ const WhyChoose = () => {
           {/* Image */}
           <div className="w-full h-[300px] md:h-[400px] relative">
             <Image
-              src="/images/car/BusTouristique2.jpg"
+              src="/images/car/BusTouristique.jpg"
               alt="Comfortable bus interior"
               layout="fill"
               objectFit="cover"
@@ -74,8 +74,8 @@ const WhyChoose = () => {
             />
              <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-primary rounded-lg hidden md:block">
                 <img
-                  src="/images/car/BusTouristique.jpg"
-                  alt="Hotel Detail"
+                  src="/images/car/bustouristique3.jpg"
+                  alt="Detail"
                   className="w-full h-full object-cover rounded-lg transform translate-x-4 translate-y-4 shadow-lg"
                 />
               </div>

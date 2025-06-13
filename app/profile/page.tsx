@@ -357,7 +357,7 @@ export default function ProfilePage() {
                 </Card>
               </TabsContent>
 
-              {/* Settings Tab */}
+              {/* Settings Tab
               <TabsContent value="settings">
                 <Card>
                   <CardHeader>
@@ -366,7 +366,7 @@ export default function ProfilePage() {
                   </CardHeader>
                   <CardContent className="space-y-6">
                     <div className="space-y-6">
-                      {/* Notifications Section */}
+                      {/* Notifications Section 
                       <div>
                         <h3 className="text-lg font-medium mb-4">Notifications</h3>
                         <div className="space-y-4">
@@ -398,7 +398,7 @@ export default function ProfilePage() {
                         </div>
                       </div>
 
-                      {/* Appearance Section */}
+                      {/* Appearance Section 
                       <div>
                         <h3 className="text-lg font-medium mb-4">Apparence</h3>
                         <div className="space-y-4">
@@ -414,7 +414,7 @@ export default function ProfilePage() {
                         </div>
                       </div>
 
-                      {/* Security Section */}
+                      {/* Security Section
                       <div>
                         <h3 className="text-lg font-medium mb-4">Sécurité</h3>
                         <div className="space-y-4">
@@ -450,7 +450,7 @@ export default function ProfilePage() {
                     <Button onClick={handleSaveSettings}>Enregistrer les paramètres</Button>
                   </CardFooter>
                 </Card>
-              </TabsContent>
+              </TabsContent> */}
             </Tabs>
           </div>
         </div>
