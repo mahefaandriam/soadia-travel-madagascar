@@ -163,7 +163,7 @@ const Testamonials = () => {
                         Des clients satisfaits, des trajets réussis.
                     </p>
                     <p className="text-gray-500">
-                        Chaque trajet compte, et chaque retour d&#39;expérience nous touche. Merci à nos clients pour leur confiance ! Qu&#39;il s&#39;agisse d&#39;un simple trajet en bus ou d&#39;un service VIP avec chauffeur, ils partagent leurs impressions — et nous, on en est fiers.
+                        Chaque trajet compte, et chaque retour d&#39;expérience nous touche. Merci à nos clients pour leur confiance ! Qu&#39;il s&#39;agisse d&#39;un simple trajet en bus ou d&#39;un service VIP avec chauffeur, ils partagent leurs impressions et nous, on en est fiers.
                     </p>
                     <div className="absolute top-0 right-50 opacity-10 z-50">
                            <Quote size={250} opacity={50}  strokeWidth={1} />
