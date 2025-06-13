@@ -165,7 +165,7 @@ export default function Home() {
         <section id="contact" className="py-24 bg-gray-50 dark:bg-gray-800">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto mb-16 text-center">
-              <h2 className="text-3xl font-bold mb-6 text-sky-950 dark:text-white">Tarifs</h2>
+              <h2 className="text-3xl font-bold mb-6 text-sky-950 dark:text-white">Notre grille tarifaire</h2>
               <p className="text-gray-500 dark:text-gray-300">
               Trouvez l’offre qui vous convient parmi nos différentes formules, conçues 
               pour s’adapter à vos besoins, vos priorités et votre budget.
