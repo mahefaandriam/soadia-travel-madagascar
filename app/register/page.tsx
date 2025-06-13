@@ -36,8 +36,8 @@ export default function RegisterPage() {
     // Validate form
     if (formData.password !== formData.confirmPassword) {
       toast({
-        title: "Passwords don't match",
-        description: "Please make sure your passwords match.",
+        title: "Les mots de passe ne correspondent pas",
+        description: "Veuillez vous assurer que vos mots de passe correspondent.",
         variant: "destructive",
       })
       return
@@ -74,16 +74,16 @@ export default function RegisterPage() {
       }
 
       toast({
-        title: "Registration successful",
-        description: "Your account has been created. You can now log in.",
+        title: "Inscription réussie",
+        description: "Votre compte a été créé. Vous pouvez maintenant vous connecter.",
       })
 
       // Redirect to login page
       router.push("/login")
     } catch (error) {
       toast({
-        title: "Registration failed",
-        description: error instanceof Error ? error.message : "Something went wrong",
+        title: "L'enregistrement a échoué",
+        description: error instanceof Error ? error.message : "Une erreur s'est produite",
         variant: "destructive",
       })
     } finally {

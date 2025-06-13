@@ -170,20 +170,20 @@ export default function AdminDashboard() {
       })
 
       if (!response.ok) {
-        throw new Error("Failed to update user status")
+        throw new Error("Échec de la mise à jour du statut utilisateur")
       }
 
       // Update local state
       setUsers(users.map((user) => (user.id === userId ? { ...user, status: newStatus } : user)))
 
       toast({
-        title: "User Status Updated",
-        description: `User has been ${newStatus}.`,
+        title: "Statut de l’utilisateur mis à jour",
+        description: `Utilisateur a été ${newStatus}.`,
       })
     } catch (error) {
       toast({
-        title: "Error",
-        description: "Failed to update user status",
+        title: "Erreur",
+        description: "Échec de la mise à jour du statut utilisateur",
         variant: "destructive",
       })
     }

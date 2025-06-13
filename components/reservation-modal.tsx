@@ -30,6 +30,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { CarSeatSelector } from "@/components/car-seat-selector"
 import { Badge } from "@/components/ui/badge"
 import { useToast } from "@/hooks/use-toast"
+import { Input } from "@/components/ui/input"
 
 // Payment methods
 const paymentMethods = [
@@ -86,6 +87,7 @@ export function ReservationModal({ isOpen, onClose, selectedPlan }: ReservationM
   const [date, setDate] = useState<Date>()
   const [time, setTime] = useState("")
   const [paymentMethod, setPaymentMethod] = useState("")
+  const [paymentRef, setPaymentRef] = useState("")
   const [selectedVehicle, setSelectedVehicle] = useState("")
   const [selectedSeats, setSelectedSeats] = useState<string[]>([])
 
@@ -235,6 +237,7 @@ export function ReservationModal({ isOpen, onClose, selectedPlan }: ReservationM
         country_id: Number.parseInt(country),
         city_id: Number.parseInt(city),
         payment_method: paymentMethod,
+        payment_ref: paymentRef,
         total_price: totalPrice,
         selected_seats: selectedSeatIds,
       }
@@ -280,6 +283,7 @@ export function ReservationModal({ isOpen, onClose, selectedPlan }: ReservationM
     setDate(undefined)
     setTime("")
     setPaymentMethod("")
+    setPaymentRef("")
     setSelectedSeats([])
     if (vehicles.length > 0) {
       setSelectedVehicle(vehicles[0].id.toString())
@@ -418,6 +422,13 @@ export function ReservationModal({ isOpen, onClose, selectedPlan }: ReservationM
                     {paymentMethod === method.id && <Check className="h-5 w-5 text-primary" />}
                   </div>
                 ))}
+                <Input
+                    id="ref"
+                    name="payment_ref"
+                    type="ref"
+                    placeholder="Référence du paiement"
+                    required
+                />
               </RadioGroup>
             </div>
 
@@ -485,6 +496,14 @@ export function ReservationModal({ isOpen, onClose, selectedPlan }: ReservationM
                     <span className="font-medium dark:text-white">
                       {paymentMethods.find((m) => m.id === paymentMethod)?.name}
                     </span>
+                    <Input
+                        id="ref"
+                        name="payment_ref"
+                        type="ref"
+                        value={paymentRef}
+                        placeholder="Référence du paiement"
+                        readOnly
+                    />
                   </div>
                 ) : (
                   <div className="mt-2 text-gray-500 dark:text-gray-400">Aucun mode de paiement sélectionné</div>

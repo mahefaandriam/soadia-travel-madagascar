@@ -9,13 +9,11 @@ export async function POST(request: Request) {
     const session = await getServerSession(authOptions)
     const isAdmin = session?.user?.email === "admin@soatransplus.com"
 
-    console.log("there");
     // Check if user is admin
     if (!session?.user || session.user.email !== "admin@soatransplus.com") {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
     }
     
-    console.log("there1");
     // Update past reservations
     const result = await updatePastReservations()
 
