@@ -187,6 +187,7 @@ export async function createReservation(data: any) {
   }
 }
 
+
 export async function getReservationById(id: number) {
   const result = await sql`
     SELECT r.*,
