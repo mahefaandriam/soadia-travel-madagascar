@@ -28,7 +28,8 @@ export function AdminScheduledTasks() {
       }
 
       const data = await response.json()
-
+      
+      
       setLastRun(data.timestamp)
       setUpdatedCount(data.updated)
 

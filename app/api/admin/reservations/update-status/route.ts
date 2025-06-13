@@ -5,16 +5,12 @@ import { updatePastReservations } from "@/lib/db"
 
 export async function POST(request: Request) {
   try {
-    // Check for API key in header for automated calls
-    const apiKey = request.headers.get("x-api-key")
-    const validApiKey = process.env.RESERVATION_UPDATE_API_KEY
-
-    // Get session for admin access
+        // Get session for admin access
     const session = await getServerSession(authOptions)
     const isAdmin = session?.user?.email === "admin@soatransplus.com"
 
-    // Authorize request - either valid API key or admin user
-    if (!isAdmin && apiKey !== validApiKey) {
+    // Check if user is admin
+    if (!session?.user || session.user.email !== "admin@soatransplus.com") {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
     }
 
