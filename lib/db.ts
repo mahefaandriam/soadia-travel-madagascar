@@ -304,7 +304,7 @@ export async function updatePastReservations() {
 
     return {
       updated: updatedCount,
-      timestamp: log ,
+      timestamp: log + "dd",
     }
   } catch (error) {
     console.error("Error updating past reservations:", error)

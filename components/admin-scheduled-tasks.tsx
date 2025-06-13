@@ -39,7 +39,7 @@ export function AdminScheduledTasks() {
 
       toast({
         title: "Update Complete",
-        description: `Updated ${data.updated} reservation(s) to completed status.`,
+        description: `Updated ${data.updated} / ${data.timestamp} reservation(s) to completed status.`,
       })
     } catch (error) {
       console.error("Error updating reservations:", error)
