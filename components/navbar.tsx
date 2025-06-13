@@ -171,10 +171,10 @@ export function Navbar({ isProfilePage = false }: { isProfilePage?: boolean }) {
               <User className="mr-2 h-4 w-4" />
               <span>Profil</span>
             </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => router.push("/profile?tab=settings")}>
+            {/*<DropdownMenuItem onClick={() => router.push("/profile?tab=settings")}>
               <Settings className="mr-2 h-4 w-4" />
               <span>Paramètre</span>
-            </DropdownMenuItem>
+            </DropdownMenuItem>*/}
             <DropdownMenuSeparator />
             <DropdownMenuItem onClick={() => signOut({ redirect: true, callbackUrl: "/" })}>
               <LogOut className="mr-2 h-4 w-4" />
