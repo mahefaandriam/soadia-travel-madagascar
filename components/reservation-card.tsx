@@ -58,7 +58,7 @@ export function ReservationCard({ reservation }: ReservationCardProps) {
   const getStatusText = (status: string) => {
     switch (status) {
       case "pending":
-        return "outline"
+        return "Attente"
       case "upcoming":
         return "Prochainement"
       case "completed":

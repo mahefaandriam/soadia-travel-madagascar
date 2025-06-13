@@ -225,6 +225,23 @@ export default function AdminDashboard() {
     }
   }
 
+  const getStatusText = (status: string) => {
+    switch (status) {
+      case "pending":
+        return "Attente"
+      case "upcoming":
+        return "Prochainement"
+      case "completed":
+        return "Passé"
+      case "canceled":
+        return "Annulé"
+      case "approved":
+        return "Approuvé"
+      default:
+        return ""
+    }
+  }
+
   // Filter users based on search and status
   const filteredUsers = users.filter((user) => {
     const matchesSearch =
@@ -334,7 +351,7 @@ export default function AdminDashboard() {
                           user.status === "pending" ? "outline" : user.status === "approved" ? "default" : "destructive"
                         }
                       >
-                        {user.status}
+                        {getStatusText(user.status)}
                       </Badge>
                     </div>
                   ))}
@@ -408,7 +425,7 @@ export default function AdminDashboard() {
                                   : "destructive"
                             }
                           >
-                            {user.status}
+                           {getStatusText(user.status)}
                           </Badge>
                         </TableCell>
                         <TableCell>{format(new Date(user.created_at), "MMM dd, yyyy")}</TableCell>
@@ -430,7 +447,7 @@ export default function AdminDashboard() {
                                 <>
                                   <DropdownMenuItem onClick={() => handleUserStatusChange(user.id, "approved")}>
                                     <UserCheck className="mr-2 h-4 w-4" />
-                                    approuver
+                                    Approuver
                                   </DropdownMenuItem>
                                   <DropdownMenuItem onClick={() => handleUserStatusChange(user.id, "rejected")}>
                                     <UserX className="mr-2 h-4 w-4" />
