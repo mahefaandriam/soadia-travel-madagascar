@@ -325,7 +325,7 @@ export default function AdminDashboard() {
                   <CheckCircle className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
-                  <div className="text-2xl font-bold">${stats.totalRevenue}</div>
+                  <div className="text-2xl font-bold">{stats.totalRevenue} MGA</div>
                   <p className="text-xs text-muted-foreground">{stats.confirmedReservations} Réservations confirmées</p>
                 </CardContent>
               </Card>
@@ -550,7 +550,7 @@ export default function AdminDashboard() {
                           </div>
                         </TableCell>
                         <TableCell>
-                          <div className="font-medium">${reservation.total_price}</div>
+                          <div className="font-medium">{reservation.total_price} MGA</div>
                           <div className="text-sm text-gray-500">{reservation.payment_method}</div>
                           <div className="text-sm text-gray-500">réf:{reservation.payment_ref}</div>
                         </TableCell>
