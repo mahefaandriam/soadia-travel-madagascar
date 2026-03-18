@@ -13,10 +13,20 @@ import Footer from "@/components/Footer"
 export default function Home() {
   return (
     <div className="">
+      {/* Head Section */}
+      <Head>
+        <title>Soa Dia Travel Madagascar</title>
+
+        <meta name="description" content="Le bonheur de voyager avec Soa Dia Travel Madagascar" />
+        <link rel="icon" href="/favicon.ico" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8528915813394509"
+          crossorigin="anonymous"></script>
+      </Head>
+
       <Navbar />
       <main className="overflow-visible">
         {/* Hero Section  */}
-         <Hero />
+        <Hero />
         {/*<section className="relative py-32">
           {/* Background Image 
           <div className="absolute inset-0 z-0">
@@ -124,8 +134,8 @@ export default function Home() {
               <h2 className="text-5xl font-bold mb-6 text-white">MADAGASCAR VOUS ATTEND!</h2>
               <div className="w-24 h-1 bg-white mx-auto mb-8 rounded-full"></div>
               <p className="text-xl text-white/90 mb-12 max-w-2xl mx-auto">
-              Les plus beaux souvenirs se créent sur la route, là où chaque kilomètre parcouru devient une histoire, chaque arrêt un souvenir,
-               et chaque détour une aventure inattendue.
+                Les plus beaux souvenirs se créent sur la route, là où chaque kilomètre parcouru devient une histoire, chaque arrêt un souvenir,
+                et chaque détour une aventure inattendue.
               </p>
               <a href="#tariff-plan"><button className="bg-white text-primary px-8 py-4 rounded-md font-medium hover:bg-white/90 transition-colors">
                 Voir nos tarifs
@@ -140,7 +150,7 @@ export default function Home() {
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl font-bold text-sky-950 mb-4 dark:text-white">Nos implantations</h2>
               <p className="text-sm text-gray-500 dark:text-gray-300 mb-2">
-              Trouvez facilement l’agence la plus proche de chez vous et bénéficiez de notre expertise locale, où que vous soyez.
+                Trouvez facilement l’agence la plus proche de chez vous et bénéficiez de notre expertise locale, où que vous soyez.
               </p>
             </div>
           </div>
@@ -167,8 +177,8 @@ export default function Home() {
             <div className="max-w-4xl mx-auto mb-16 text-center">
               <h2 className="text-3xl font-bold mb-6 text-sky-950 dark:text-white">Notre grille tarifaire</h2>
               <p className="text-gray-500 dark:text-gray-300">
-              Trouvez l’offre qui vous convient parmi nos différentes formules, conçues 
-              pour s’adapter à vos besoins, vos priorités et votre budget.
+                Trouvez l’offre qui vous convient parmi nos différentes formules, conçues
+                pour s’adapter à vos besoins, vos priorités et votre budget.
               </p>
             </div>
 
